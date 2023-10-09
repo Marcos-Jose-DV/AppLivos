@@ -14,9 +14,16 @@ public class LivrosController : Controller
         _dbContext = dbContext;
     }
 
-    public IActionResult Index()
+    [HttpGet("/livros")]
+    public IActionResult GetBooks()
     {
         var books = _dbContext.Books.AsNoTracking().ToListAsync();
         return Ok(books);
+    }
+    [HttpGet("{id:int}")]
+    public IActionResult GetBookId([FromServices] int id)
+    {
+        var book = _dbContext.Books.Where(x => x.Id == id);
+        return Ok(book);
     }
 }
