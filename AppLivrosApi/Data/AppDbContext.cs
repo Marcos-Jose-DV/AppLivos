@@ -10,11 +10,12 @@ public class AppDbContext : DbContext
     public AppDbContext(IConfiguration configuration)
     {
         _configuration = configuration;
-        
+
     }
 
 
-   public DbSet<Books> Books { get; set; }
-    protected override void OnConfiguring(DbContextOptionsBuilder options)  
+    public DbSet<Book> Books { get; set; }
+    public DbSet<Category> Categories { get; set; }
+    protected override void OnConfiguring(DbContextOptionsBuilder options)
         => options.UseSqlite(_configuration.GetConnectionString("WebApiDatabase"));
 }
