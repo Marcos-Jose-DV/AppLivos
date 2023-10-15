@@ -20,7 +20,7 @@ public class Category
         get => _imageUrl;
         set
         {
-            _imageUrl = $"https://firebasestorage.googleapis.com/v0/b/applivros-ea1a0.appspot.com/o/{value}?alt=media&token=4c17d2d2-2e84-4ffb-9aa4-2a6b13b20d21&_gl=1*uvylmf*_ga*NzE4OTM5NjkwLjE2OTcxNTQ1NDU.*_ga_CW55HF8NVT*MTY5NzM5NzU0MS4yLjEuMTY5NzM5ODM0NS41Mi4wLjA.";
+            _imageUrl = $"https://raw.githubusercontent.com/Marcos-Jose-DV/AppLivos/main/AppLivrosApi/wwwroot/images/categorias/{value}";
         }
     }
     //public string ImageUrl { get; set; }

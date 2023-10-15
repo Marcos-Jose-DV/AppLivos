@@ -44,6 +44,7 @@ C:\Users\AlexandreRibeiro\Desktop\AppLivros\AppLivrosApi\obj\Debug\net7.0\AppLiv
 C:\Users\AlexandreRibeiro\Desktop\AppLivros\AppLivrosApi\obj\Debug\net7.0\ref\AppLivrosApi.dll
 D:\Projetos GitHub\C#\FullStack\AppLivos\AppLivrosApi\bin\Debug\net7.0\appsettings.Development.json
 D:\Projetos GitHub\C#\FullStack\AppLivos\AppLivrosApi\bin\Debug\net7.0\appsettings.json
+D:\Projetos GitHub\C#\FullStack\AppLivos\AppLivrosApi\bin\Debug\net7.0\AppLivrosApi.staticwebassets.runtime.json
 D:\Projetos GitHub\C#\FullStack\AppLivos\AppLivrosApi\bin\Debug\net7.0\AppLivrosApi.exe
 D:\Projetos GitHub\C#\FullStack\AppLivos\AppLivrosApi\bin\Debug\net7.0\AppLivrosApi.deps.json
 D:\Projetos GitHub\C#\FullStack\AppLivos\AppLivrosApi\bin\Debug\net7.0\AppLivrosApi.runtimeconfig.json

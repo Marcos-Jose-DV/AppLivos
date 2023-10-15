@@ -1,11 +1,88 @@
 {
   "Version": 1,
-  "Hash": "qL0kHr9OIC2hEF01B3fwMUWBj9tg2Dl9ZoFHJnACD7U=",
+  "Hash": "RTCc+7IrQ1dYAs8XBANg9eKFESJKGzEeNPB2EiUlZig=",
   "Source": "AppLivrosApi",
   "BasePath": "_content/AppLivrosApi",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": []
+  "DiscoveryPatterns": [
+    {
+      "Name": "AppLivrosApi\\wwwroot",
+      "Source": "AppLivrosApi",
+      "ContentRoot": "D:\\Projetos GitHub\\C#\\FullStack\\AppLivos\\AppLivrosApi\\wwwroot\\",
+      "BasePath": "_content/AppLivrosApi",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "D:\\Projetos GitHub\\C#\\FullStack\\AppLivos\\AppLivrosApi\\wwwroot\\images\\categorias\\ficcao.png",
+      "SourceId": "AppLivrosApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projetos GitHub\\C#\\FullStack\\AppLivos\\AppLivrosApi\\wwwroot\\",
+      "BasePath": "_content/AppLivrosApi",
+      "RelativePath": "images/categorias/ficcao.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\categorias\\ficcao.png"
+    },
+    {
+      "Identity": "D:\\Projetos GitHub\\C#\\FullStack\\AppLivos\\AppLivrosApi\\wwwroot\\images\\categorias\\misterio.png",
+      "SourceId": "AppLivrosApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projetos GitHub\\C#\\FullStack\\AppLivos\\AppLivrosApi\\wwwroot\\",
+      "BasePath": "_content/AppLivrosApi",
+      "RelativePath": "images/categorias/misterio.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\categorias\\misterio.png"
+    },
+    {
+      "Identity": "D:\\Projetos GitHub\\C#\\FullStack\\AppLivos\\AppLivrosApi\\wwwroot\\images\\categorias\\romance.png",
+      "SourceId": "AppLivrosApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projetos GitHub\\C#\\FullStack\\AppLivos\\AppLivrosApi\\wwwroot\\",
+      "BasePath": "_content/AppLivrosApi",
+      "RelativePath": "images/categorias/romance.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\categorias\\romance.png"
+    },
+    {
+      "Identity": "D:\\Projetos GitHub\\C#\\FullStack\\AppLivos\\AppLivrosApi\\wwwroot\\images\\categorias\\tecnologia.png",
+      "SourceId": "AppLivrosApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projetos GitHub\\C#\\FullStack\\AppLivos\\AppLivrosApi\\wwwroot\\",
+      "BasePath": "_content/AppLivrosApi",
+      "RelativePath": "images/categorias/tecnologia.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\categorias\\tecnologia.png"
+    }
+  ]
 }
