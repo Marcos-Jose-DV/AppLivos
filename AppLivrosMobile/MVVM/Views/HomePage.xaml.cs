@@ -4,10 +4,17 @@ namespace AppLivrosMobile.MVVM.Views;
 
 public partial class HomePage : ContentPage
 {
-	public HomePage(HomeViewModel viewModel)
+    private readonly HomeViewModel _viewModel;
+    public HomePage(HomeViewModel viewModel)
 	{
 		InitializeComponent();
-		BindingContext = viewModel;
+        _viewModel = viewModel;
+        BindingContext = _viewModel;
 
+    }
+    protected override async void OnAppearing()
+    {
+        base.OnAppearing();
+        await _viewModel.InitializeAsync();
     }
 }

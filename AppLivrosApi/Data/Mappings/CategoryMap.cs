@@ -31,7 +31,12 @@ public class CategoryMap : IEntityTypeConfiguration<Category>
             .HasColumnType("VARCHAR")
             .HasMaxLength(80);
 
-       
+        builder.Property(x => x.ImageUrl)
+            .IsRequired()
+            .HasColumnName("ImageUrl")
+            .HasColumnType("NVARCHAR")
+            .HasMaxLength(80);
+
         // Índices
         builder
             .HasIndex(x => x.Slug, "IX_Category_Slug")

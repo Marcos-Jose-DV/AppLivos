@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Shell xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppLivrosMobile.AppShell"
+             xmlns:views="clr-namespace:AppLivrosMobile.MVVM.Views"
+             Title="AppShell">
+
+    <TabBar>
+        <Tab Icon="dotnet_bot" Title="Inicio"  >
+
+            <ShellContent Title="Inicio" 
+              Icon="dotnet_bot" 
+              ContentTemplate="{DataTemplate views:HomePage}"
+              Route="HomePage"/>
+        </Tab>
+
+        <Tab Icon="dotnet_bot" Title="Inicio">
+
+            <ShellContent Title="Inicio" 
+              Icon="dotnet_bot" 
+              ContentTemplate="{DataTemplate views:BookPage}"
+              Route="BookPage"/>
+        </Tab>
+
+        <Tab Icon="dotnet_bot" Title="Inicio">
+            <ShellContent Title="Inicio" 
+              Icon="dotnet_bot" 
+              ContentTemplate="{DataTemplate views:HomePage}"
+              Route="HomePage"/>
+        </Tab>
+    </TabBar>
+
+
+</Shell>

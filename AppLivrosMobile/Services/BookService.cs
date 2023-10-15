@@ -1,39 +1,41 @@
-﻿using AppLivrosMobile.MVVM.Models;
+﻿using AppLivrosMobile.Constants;
+using AppLivrosMobile.MVVM.Models;
+using System.Net.Http;
 using System.Text.Json;
 
 namespace AppLivrosMobile.Services;
 
-internal class BookService : IBookService
+public class BookService
 {
     private readonly HttpClient _client;
-    private readonly JsonSerializerOptions _jsonOptions;
+    private IEnumerable<Book>? _books;
 
-    public BookService()
-    {
-        _client = new HttpClient();
-        _jsonOptions = new JsonSerializerOptions()
-        {
-            PropertyNameCaseInsensitive = true,
-        };
-    }
+    public BookService(HttpClient client)
+        => _client = client;
 
-    public async Task<Book[]> GetAllBooks(string query)
+    public async ValueTask<IEnumerable<Book>> GetBooksAsync()
     {
-        Book[] books = null;
-        try
+        if (_books is null)
         {
-            var response = await _client.GetAsync(query);
+            var response = await _client.GetAsync($"{AppConstants.HttpClientName}/v1/livros");
             if (response.IsSuccessStatusCode)
             {
-                using var responseStream = await response.Content.ReadAsStreamAsync();
-                books = await JsonSerializer.DeserializeAsync<Book[]>(responseStream, _jsonOptions);
+                var content = await response.Content.ReadAsStringAsync();
+                if (!string.IsNullOrEmpty(content))
+                    _books = JsonSerializer.Deserialize<IEnumerable<Book>>(content, new JsonSerializerOptions()
+                    {
+                        PropertyNameCaseInsensitive = true,
+                    });
+            }
+            else
+            {
+                return Enumerable.Empty<Book>();
             }
         }
-        catch (Exception ex)
-        {
-            ex.ToString();
-        }
 
-        return books;
+        return _books;
     }
+
+    public async ValueTask<IEnumerable<Book>> GetMainBookAsync()
+        => await GetBooksAsync();
 }

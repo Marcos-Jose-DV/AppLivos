@@ -3,11 +3,45 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AppLivrosMobile.MVVM.Views.HomePage"
              Title="HomePage">
-    <CollectionView ItemsSource="{Binding Categories}">
-        <CollectionView.ItemTemplate>
-            <DataTemplate>
-                <Label Text="{Binding Name}"/>
-            </DataTemplate>
-        </CollectionView.ItemTemplate>
-    </CollectionView>
+
+    <VerticalStackLayout Padding="10, 15">
+        
+        <Label>
+            <Label.FormattedText>
+                <FormattedString>
+                    <Span Text="Olá, &#10;"
+                    TextColor="{StaticResource Primary}"
+                    FontSize="14"
+                    FontAttributes="Bold"/>
+                    <Span Text="Marcos"
+                    TextColor="{StaticResource Tertiary}"
+                    FontSize="18"
+                    FontAttributes="Bold"/>
+                </FormattedString>
+            </Label.FormattedText>
+        </Label>
+
+
+        <CollectionView ItemsSource="{Binding Categories}" 
+                    SelectionMode="Single"
+                    SelectedItem="{Binding 
+                    SelectedCategory, Mode=TwoWay}">
+            <CollectionView.ItemsLayout>
+                <GridItemsLayout Orientation="Horizontal"/>
+            </CollectionView.ItemsLayout>
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Border  WidthRequest="150" Margin="10" Padding="10" StrokeShape="RoundRectangle 20">
+                        <HorizontalStackLayout HorizontalOptions="Center" VerticalOptions="Center" Spacing="10">
+                            <Image Source="{Binding ImageUrl}" Aspect="AspectFill" WidthRequest="20" HeightRequest="20"/>
+                            <Label HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Text="{Binding Name}"/>
+                        </HorizontalStackLayout>
+                    </Border>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+
+        <Label Text="Seu Livros adiciondo recentimente"/>
+
+    </VerticalStackLayout>
 </ContentPage>

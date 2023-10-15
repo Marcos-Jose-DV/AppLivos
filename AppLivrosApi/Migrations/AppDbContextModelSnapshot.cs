@@ -61,6 +61,10 @@ namespace AppLivrosApi.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
+                    b.Property<string>("ImageUrl")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("TEXT");
@@ -72,6 +76,85 @@ namespace AppLivrosApi.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Categories");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            ImageUrl = "tecnologia.png",
+                            Name = "Tecnologia",
+                            Slug = "tecnologia"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            ImageUrl = "romance.png",
+                            Name = "Romance",
+                            Slug = "romance"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            ImageUrl = "misterio.png",
+                            Name = "Mistério",
+                            Slug = "misterio"
+                        },
+                        new
+                        {
+                            Id = 4,
+                            ImageUrl = "ficcao.png",
+                            Name = "Ficção Científica",
+                            Slug = "ficcao-cientifica"
+                        },
+                        new
+                        {
+                            Id = 5,
+                            ImageUrl = "fantasia.png",
+                            Name = "Fantasia",
+                            Slug = "fantasia"
+                        },
+                        new
+                        {
+                            Id = 6,
+                            ImageUrl = "naoficcao.png",
+                            Name = "Não Ficção",
+                            Slug = "nao-ficcao"
+                        },
+                        new
+                        {
+                            Id = 7,
+                            ImageUrl = "aventura.png",
+                            Name = "Aventura",
+                            Slug = "aventura"
+                        },
+                        new
+                        {
+                            Id = 8,
+                            ImageUrl = "biografia.png",
+                            Name = "Biografia",
+                            Slug = "biografia"
+                        },
+                        new
+                        {
+                            Id = 9,
+                            ImageUrl = "historia.png",
+                            Name = "História",
+                            Slug = "historia"
+                        },
+                        new
+                        {
+                            Id = 10,
+                            ImageUrl = "autoajuda.png",
+                            Name = "Autoajuda",
+                            Slug = "autoajuda"
+                        },
+                        new
+                        {
+                            Id = 11,
+                            ImageUrl = "policial.png",
+                            Name = "Policial",
+                            Slug = "policial"
+                        });
                 });
 #pragma warning restore 612, 618
         }

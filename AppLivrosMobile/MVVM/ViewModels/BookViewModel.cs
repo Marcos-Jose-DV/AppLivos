@@ -1,44 +1,32 @@
 ﻿
-
 using AppLivrosMobile.MVVM.Models;
 using AppLivrosMobile.Services;
 using CommunityToolkit.Mvvm.ComponentModel;
+using CommunityToolkit.Mvvm.Input;
 using System.Collections.ObjectModel;
 
 namespace AppLivrosMobile.MVVM.ViewModels;
 
 public partial class BookViewModel : ObservableObject
 {
-    private readonly IBookService _bookService;
+    private readonly BookService _bookService;
 
-    [ObservableProperty]
-    Book[] _books;
-    public BookViewModel(IBookService bookService)
+    public BookViewModel(BookService bookService)
     {
-
         _bookService = bookService;
-        GetAllCategory();
-
 
     }
-    private async void GetAllCategory()
+    public ObservableCollection<Book> Books { get; set; } = new();
+    public async Task InitializeAsync()
     {
-        try
+        foreach (var book in await _bookService.GetMainBookAsync())
         {
-
-            Book[] books = await _bookService.GetAllBooks("http://10.0.2.2:5068/v1/livros");
-
-            if (books == null)
-            {
-                return;
-            }
-
-            Books = books;
-
+            Books.Add(book);
         }
-        catch (Exception ex)
-        {
-            ex.ToString();
-        }
+    }
+    [RelayCommand]
+    private async Task Att()
+    {
+        await InitializeAsync();
     }
 }

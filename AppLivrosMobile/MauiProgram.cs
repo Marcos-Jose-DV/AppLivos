@@ -18,12 +18,20 @@ namespace AppLivrosMobile
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
                 });
 
+           
             builder.Services.AddSingleton<HomePage>();
             builder.Services.AddSingleton<HomeViewModel>();
             builder.Services.AddSingleton<BookPage>();
             builder.Services.AddSingleton<BookViewModel>();
-            builder.Services.AddScoped<ICategoryService, CategoryService>();
-            builder.Services.AddScoped<IBookService, BookService>();
+            builder.Services.AddSingleton<BookCategoryIdPage>();
+            builder.Services.AddSingleton<BookCategoryIdViewModel>();
+            builder.Services.AddScoped<CategoryService>();
+            builder.Services.AddScoped<BookService>();
+            builder.Services.AddScoped<HttpClient>();
+
+            builder.Services.AddSingleton<INavigationService, NavigationService>();
+            Routing.RegisterRoute(nameof(BookCategoryIdPage), typeof(BookCategoryIdPage));
+            Routing.RegisterRoute(nameof(BookPage), typeof(BookPage));
 
 
 #if DEBUG

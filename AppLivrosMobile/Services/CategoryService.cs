@@ -1,40 +1,40 @@
-﻿using AppLivrosMobile.MVVM.Models;
+﻿using AppLivrosMobile.Constants;
+using AppLivrosMobile.MVVM.Models;
 using System.Text.Json;
-using static Android.App.DownloadManager;
 
 namespace AppLivrosMobile.Services;
 
-public class CategoryService : ICategoryService
+public class CategoryService 
 {
+    private IEnumerable<Category>? _categories;
+
     private readonly HttpClient _client;
-    private readonly JsonSerializerOptions _jsonOptions;
 
-    public CategoryService()
+    public CategoryService(HttpClient client)    
+        => _client = client;
+    
+    public async ValueTask<IEnumerable<Category>> GetCategoriesAsync()
     {
-        _client = new HttpClient();
-        _jsonOptions = new JsonSerializerOptions()
+        if (_categories is null)
         {
-            PropertyNameCaseInsensitive = true,
-        };
-    }
-
-    public async Task<Category[]> GetAllCategory(string query)
-    {
-        Category[] category = null;
-        try
-        {
-            var response = await _client.GetAsync(query);
+            var response = await _client.GetAsync($"{AppConstants.HttpClientName}/v1/categorias");
             if (response.IsSuccessStatusCode)
             {
-                using var responseStream = await response.Content.ReadAsStreamAsync();
-                category = await JsonSerializer.DeserializeAsync<Category[]>(responseStream, _jsonOptions);
+                var content = await response.Content.ReadAsStringAsync();
+                if (!string.IsNullOrEmpty(content))
+                    _categories = JsonSerializer.Deserialize<IEnumerable<Category>>(content, new JsonSerializerOptions()
+                    {
+                        PropertyNameCaseInsensitive = true,
+                    });
+            }
+            else
+            {
+                return Enumerable.Empty<Category>();
             }
         }
-        catch (Exception ex)
-        {
-            ex.ToString();
-        }
-
-        return category;
+        return _categories;
     }
+    public async ValueTask<IEnumerable<Category>> GetMainCategoriesAsync()
+        => await GetCategoriesAsync()
+;
 }

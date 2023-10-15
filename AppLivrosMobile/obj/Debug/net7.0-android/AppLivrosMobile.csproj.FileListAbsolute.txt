@@ -131,6 +131,7 @@ D:\Projetos GitHub\C#\FullStack\AppLivos\AppLivrosMobile\obj\Debug\net7.0-androi
 D:\Projetos GitHub\C#\FullStack\AppLivos\AppLivrosMobile\obj\Debug\net7.0-android\android\assets\Microsoft.Extensions.Configuration.dll
 D:\Projetos GitHub\C#\FullStack\AppLivos\AppLivrosMobile\obj\Debug\net7.0-android\android\assets\Microsoft.Extensions.DependencyInjection.Abstractions.dll
 D:\Projetos GitHub\C#\FullStack\AppLivos\AppLivrosMobile\obj\Debug\net7.0-android\android\assets\Microsoft.Extensions.DependencyInjection.dll
+D:\Projetos GitHub\C#\FullStack\AppLivos\AppLivrosMobile\obj\Debug\net7.0-android\android\assets\Microsoft.Extensions.Http.dll
 D:\Projetos GitHub\C#\FullStack\AppLivos\AppLivrosMobile\obj\Debug\net7.0-android\android\assets\Microsoft.Extensions.Logging.Abstractions.dll
 D:\Projetos GitHub\C#\FullStack\AppLivos\AppLivrosMobile\obj\Debug\net7.0-android\android\assets\Microsoft.Extensions.Logging.Debug.dll
 D:\Projetos GitHub\C#\FullStack\AppLivos\AppLivrosMobile\obj\Debug\net7.0-android\android\assets\Microsoft.Extensions.Logging.dll
@@ -973,3 +974,7 @@ D:\Projetos GitHub\C#\FullStack\AppLivos\AppLivrosMobile\obj\Debug\net7.0-androi
 D:\Projetos GitHub\C#\FullStack\AppLivos\AppLivrosMobile\obj\Debug\net7.0-android\stamp\_GenerateJavaStubs.stamp
 D:\Projetos GitHub\C#\FullStack\AppLivos\AppLivrosMobile\obj\Debug\net7.0-android\stamp\_GeneratePackageManagerJava.stamp
 D:\Projetos GitHub\C#\FullStack\AppLivos\AppLivrosMobile\obj\Debug\net7.0-android\stamp\_ResolveLibraryProjectImports.stamp
+D:\Projetos GitHub\C#\FullStack\AppLivos\AppLivrosMobile\obj\Debug\net7.0-android\resizetizer\r\drawable\ficcao.png
+D:\Projetos GitHub\C#\FullStack\AppLivos\AppLivrosMobile\obj\Debug\net7.0-android\resizetizer\r\drawable\misterio.png
+D:\Projetos GitHub\C#\FullStack\AppLivos\AppLivrosMobile\obj\Debug\net7.0-android\resizetizer\r\drawable\romance.png
+D:\Projetos GitHub\C#\FullStack\AppLivos\AppLivrosMobile\obj\Debug\net7.0-android\resizetizer\r\drawable\tecnologia.png

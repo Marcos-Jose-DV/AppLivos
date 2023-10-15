@@ -1,47 +1,52 @@
 ﻿using AppLivrosMobile.MVVM.Models;
+using AppLivrosMobile.MVVM.Views;
 using AppLivrosMobile.Services;
 using CommunityToolkit.Mvvm.ComponentModel;
-using IntelliJ.Lang.Annotations;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Collections.ObjectModel;
+using System.ComponentModel;
 
 namespace AppLivrosMobile.MVVM.ViewModels;
 
 public partial class HomeViewModel : ObservableObject
 {
-    private readonly ICategoryService _categoryService;
+    private readonly CategoryService _categoryService;
+    private readonly INavigationService _navigationService;
 
     [ObservableProperty]
-    Category[] _categories;
-    public HomeViewModel(ICategoryService categoryService)
+    Category _selectedCategory;
+
+
+    [ObservableProperty]
+    IEnumerable<Category> _categories;
+
+    public HomeViewModel(CategoryService categoryService, INavigationService navigation)
     {
-
         _categoryService = categoryService;
-        GetAllCategory();
-
-
+        _navigationService = navigation;
+        PropertyChanged += BookPageViewModelPropertyChanged;
     }
-    private async void GetAllCategory()
+
+    private async void BookPageViewModelPropertyChanged(object sender, PropertyChangedEventArgs e)
     {
         try
         {
-            
-            Category[] categories = await _categoryService.GetAllCategory("http://10.0.2.2:5068/v1/categorias");
-
-            if (categories == null)
+            if (e.PropertyName == nameof(SelectedCategory))
             {
-                return;
+                var uri = $"{nameof(BookCategoryIdPage)}?id={SelectedCategory.Id}";
+                await _navigationService.GoToAsync(uri);
             }
-
-            Categories = categories;
-          
+            return;
         }
         catch (Exception ex)
         {
-            ex.ToString();
-        }
+            Console.WriteLine($"{ex.Message} - {ex.StackTrace}");
+            return;
+        };
+    }
+
+
+    public async Task InitializeAsync()
+    {
+        Categories = await _categoryService.GetMainCategoriesAsync();
     }
 }

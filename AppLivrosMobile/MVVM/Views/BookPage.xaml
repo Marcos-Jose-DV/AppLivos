@@ -3,11 +3,14 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AppLivrosMobile.MVVM.Views.BookPage"
              Title="BookPage">
-    <CollectionView ItemsSource="{Binding Books}">
-        <CollectionView.ItemTemplate>
-            <DataTemplate>
-                <Label Text="{Binding Title}"/>
-            </DataTemplate>
-        </CollectionView.ItemTemplate>
-    </CollectionView>
+    <VerticalStackLayout>
+        <CollectionView ItemsSource="{Binding Books}">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Label Text="{Binding Title}"/>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+        <Button Text="Att" Command="{Binding AttCommand}"/>
+    </VerticalStackLayout>
 </ContentPage>
