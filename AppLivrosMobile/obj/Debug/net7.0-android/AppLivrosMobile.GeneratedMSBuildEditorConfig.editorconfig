@@ -32,6 +32,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = AppLivrosMobile.MVVM.Views
 build_metadata.AdditionalFiles.TargetPath = MVVM\Views\BookCategoryIdPage.xaml
 build_metadata.AdditionalFiles.RelativePath = MVVM\Views\BookCategoryIdPage.xaml
 
+[C:/Users/AlexandreRibeiro/Desktop/AppLivros/AppLivos/AppLivrosMobile/MVVM/Views/BookIdPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AppLivrosMobile.MVVM.Views.BookIdPage.xaml
+build_metadata.AdditionalFiles.TargetPath = MVVM\Views\BookIdPage.xaml
+build_metadata.AdditionalFiles.RelativePath = MVVM\Views\BookIdPage.xaml
+
 [C:/Users/AlexandreRibeiro/Desktop/AppLivros/AppLivos/AppLivrosMobile/MVVM/Views/BookPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = AppLivrosMobile.MVVM.Views.BookPage.xaml
@@ -43,6 +49,12 @@ build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = AppLivrosMobile.MVVM.Views.HomePage.xaml
 build_metadata.AdditionalFiles.TargetPath = MVVM\Views\HomePage.xaml
 build_metadata.AdditionalFiles.RelativePath = MVVM\Views\HomePage.xaml
+
+[C:/Users/AlexandreRibeiro/Desktop/AppLivros/AppLivos/AppLivrosMobile/MVVM/Views/UpdateBookPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AppLivrosMobile.MVVM.Views.UpdateBookPage.xaml
+build_metadata.AdditionalFiles.TargetPath = MVVM\Views\UpdateBookPage.xaml
+build_metadata.AdditionalFiles.RelativePath = MVVM\Views\UpdateBookPage.xaml
 
 [C:/Users/AlexandreRibeiro/Desktop/AppLivros/AppLivos/AppLivrosMobile/Resources/Styles/Colors.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml

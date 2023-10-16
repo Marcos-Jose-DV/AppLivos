@@ -2,8 +2,9 @@
 using AppLivrosMobile.MVVM.Views;
 using AppLivrosMobile.Services;
 using CommunityToolkit.Mvvm.ComponentModel;
-using System.Collections.ObjectModel;
+using CommunityToolkit.Mvvm.Input;
 using System.ComponentModel;
+using System.Windows.Input;
 
 namespace AppLivrosMobile.MVVM.ViewModels;
 
@@ -15,6 +16,8 @@ public partial class HomeViewModel : ObservableObject
 
     [ObservableProperty]
     Category _selectedCategory;
+    [ObservableProperty]
+    Book _selectedBook;
 
     [ObservableProperty]
     bool _IsBusy;
@@ -24,6 +27,7 @@ public partial class HomeViewModel : ObservableObject
     [ObservableProperty]
     IEnumerable<Book> _books;
 
+   
     public HomeViewModel(CategoryService categoryService, BookService bookService, INavigationService navigation)
     {
         IsBusy = true;
@@ -31,6 +35,7 @@ public partial class HomeViewModel : ObservableObject
         _bookService = bookService;
         _navigationService = navigation;
         PropertyChanged += BookPageViewModelPropertyChanged;
+
     }
 
     private async void BookPageViewModelPropertyChanged(object sender, PropertyChangedEventArgs e)
@@ -42,6 +47,12 @@ public partial class HomeViewModel : ObservableObject
                 var uri = $"{nameof(BookCategoryIdPage)}?id={SelectedCategory.Id}";
                 await _navigationService.GoToAsync(uri);
             }
+
+            if (e.PropertyName == nameof(SelectedBook))
+            {
+                var uri = $"{nameof(BookIdPage)}?id={SelectedBook.Id}";
+                await _navigationService.GoToAsync(uri);
+            }
             return;
         }
         catch (Exception ex)
@@ -51,14 +62,13 @@ public partial class HomeViewModel : ObservableObject
         };
     }
 
-
     public async Task InitializeAsync()
     {
         try
         {
             Categories = await _categoryService.GetMainCategoriesAsync();
             Books = await _bookService.GetMainBookAsync();
-           await Task.Delay(10000);
+            await Task.Delay(3000);
         }
         finally
         {

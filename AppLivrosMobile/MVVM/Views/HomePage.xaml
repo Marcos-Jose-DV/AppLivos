@@ -3,8 +3,9 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AppLivrosMobile.MVVM.Views.HomePage"
              xmlns:models="clr-namespace:AppLivrosMobile.MVVM.Models"
-             Shell.NavBarIsVisible="False"
              xmlns:converter="clr-namespace:AppLivrosMobile.Converter"
+             xmlns:viewmodel="clr-namespace:AppLivrosMobile.MVVM.ViewModels"
+             Shell.NavBarIsVisible="False"
              Title="HomePage"
              BackgroundColor="{StaticResource Primary}">
 
@@ -22,7 +23,6 @@
                         </FormattedString>
                     </Label.FormattedText>
                 </Label>
-
 
                 <CollectionView ItemsSource="{Binding Categories}" 
                     SelectionMode="Single"
@@ -43,65 +43,42 @@
                     </CollectionView.ItemTemplate>
                 </CollectionView>
 
-
                 <Label Text="Mais Recentes" Style="{StaticResource H1}" />
 
-                <CollectionView ItemsSource="{Binding Books}">
-
+                <CollectionView ItemsSource="{Binding Books}"  
+                                SelectionMode="Single"
+                                SelectedItem="{Binding 
+                                SelectedBook, Mode=TwoWay}">
                     <CollectionView.ItemsLayout>
                         <GridItemsLayout Orientation="Horizontal" />
                     </CollectionView.ItemsLayout>
-
                     <CollectionView.ItemTemplate>
-                        <DataTemplate x:DataType="models:Book">
-                            <!--<Border StrokeShape="RoundRectangle 10"
-                            StrokeThickness="0.5"
-                            Stroke="Gray" 
-                            Margin="5"
-                            Padding="10">-->
-                            <Frame HasShadow="True" 
-                                   BorderColor="Gray"
-                                   Margin="5"
-                                   Padding="10">
-                                <Grid Padding="0" RowDefinitions="*,Auto" RowSpacing="10">
-                                    <VerticalStackLayout Spacing="5">
-                                        <Grid ColumnDefinitions="Auto,Auto" ColumnSpacing="10">
-                                            <Image Source="{Binding ImageUrl}" Aspect="AspectFit"
+                        <DataTemplate >
+                            <!--x:DataType="models:Book"-->
+
+                            <Grid BackgroundColor="White" Padding="5" RowDefinitions="*,Auto" RowSpacing="10">
+                                <VerticalStackLayout Spacing="5">
+                                    <Grid ColumnDefinitions="Auto,Auto" ColumnSpacing="10">
+                                        <Image Source="{Binding ImageUrl}" 
+                                                   Aspect="AspectFit"
                                                    WidthRequest="100"
                                                    VerticalOptions="Center"
                                                    HorizontalOptions="Start"
                                                    Opacity=".9"/>
 
-                                            <VerticalStackLayout Grid.Column="1" Margin="0" Spacing="10">
-                                                <Button Text="Atualizar"
-                                                    FontAttributes="Bold"
-                                                    FontSize="16"
-                                                    TextColor="{StaticResource White}"
-                                                    BackgroundColor="Blue"/>
-                                                <Button Text="Excluir"
-                                                    FontAttributes="Bold"
-                                                    FontSize="16"
-                                                    BackgroundColor="Red"                                            
-                                                    TextColor="{StaticResource White}"/>
-
-                                                <Label  Text="{Binding Check, Converter={StaticResource CheckViewBook}}" 
-                                                        Style="{StaticResource H4}" 
-                                                        HorizontalOptions="Center"/>
-                                            </VerticalStackLayout>
-                                        </Grid>
-
-                                        <Label  Text="{Binding PageTotal, StringFormat='Total de paginas {0}'}" Style="{StaticResource H4}"/>
-                                        <Label  Text="{Binding PageIndex, StringFormat='Total de paginas lidas {0}'}" Style="{StaticResource H4}"/>
-
-                                    </VerticalStackLayout>
-
-
-                                </Grid>
-                            </Frame>
+                                        <VerticalStackLayout  Grid.Column="1" Margin="0" Spacing="10">
+                                            <Label  Text="{Binding Check, Converter={StaticResource CheckViewBook}}" Style="{StaticResource H4}"/>
+                                            <Label  Text="{Binding PageTotal, StringFormat='Total de paginas {0}'}" Style="{StaticResource H4}"/>
+                                            <Label  Text="{Binding PageIndex, StringFormat='Total de paginas lidas {0}'}" Style="{StaticResource H4}"/>
+                                        </VerticalStackLayout>
+                                    </Grid>
+                                    
+                                </VerticalStackLayout>
+                            </Grid>
                         </DataTemplate>
                     </CollectionView.ItemTemplate>
                 </CollectionView>
-
+                
             </VerticalStackLayout>
 
             <Grid IsVisible="{Binding IsBusy}">

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "BmRPyMjfq2yjjq6dHSVQh3YIdqbrby/9zHy+GpFG7KY=",
+  "Hash": "5b1UViAuS0HA8NXRKToRzFyOcZv6DCjNaiP5StAxwac=",
   "Source": "AppLivrosApi",
   "BasePath": "_content/AppLivrosApi",
   "Mode": "Default",
@@ -66,6 +66,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\Books\\codlimpo.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\AlexandreRibeiro\\Desktop\\AppLivros\\AppLivos\\AppLivrosApi\\wwwroot\\images\\Books\\deslimpo.jpg",
+      "SourceId": "AppLivrosApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\AlexandreRibeiro\\Desktop\\AppLivros\\AppLivos\\AppLivrosApi\\wwwroot\\",
+      "BasePath": "_content/AppLivrosApi",
+      "RelativePath": "images/Books/deslimpo.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\Books\\deslimpo.jpg"
     },
     {
       "Identity": "C:\\Users\\AlexandreRibeiro\\Desktop\\AppLivros\\AppLivos\\AppLivrosApi\\wwwroot\\images\\Books\\devlimpo.jpg",

@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets\\images\\Books\\codlimpo.jpg"
     },
     {
+      "Id": "C:\\Users\\AlexandreRibeiro\\Desktop\\AppLivros\\AppLivos\\AppLivrosApi\\wwwroot\\images\\Books\\deslimpo.jpg",
+      "PackagePath": "staticwebassets\\images\\Books\\deslimpo.jpg"
+    },
+    {
       "Id": "C:\\Users\\AlexandreRibeiro\\Desktop\\AppLivros\\AppLivos\\AppLivrosApi\\wwwroot\\images\\Books\\devlimpo.jpg",
       "PackagePath": "staticwebassets\\images\\Books\\devlimpo.jpg"
     },

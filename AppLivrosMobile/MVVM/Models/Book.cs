@@ -1,4 +1,7 @@
-﻿namespace AppLivrosMobile.MVVM.Models;
+﻿using AppLivrosMobile.MVVM.Views;
+using System.Windows.Input;
+
+namespace AppLivrosMobile.MVVM.Models;
 
 public class Book
 {
@@ -20,17 +23,17 @@ public class Book
     public string Title { get; set; }
     public string Description { get; set; }
     public string Author { get; set; }
-    public string ImageUrl { get; set; }
+    //public string ImageUrl { get; set; }
 
-    //private string _imageUrl;
-    //public string ImageUrl
-    //{
-    //    get => _imageUrl;
-    //    set
-    //    {
-    //        _imageUrl = $"https://firebasestorage.googleapis.com/v0/b/applivros-ea1a0.appspot.com/o/{value}?alt=media&token=4c17d2d2-2e84-4ffb-9aa4-2a6b13b20d21&_gl=1*uvylmf*_ga*NzE4OTM5NjkwLjE2OTcxNTQ1NDU.*_ga_CW55HF8NVT*MTY5NzM5NzU0MS4yLjEuMTY5NzM5ODM0NS41Mi4wLjA.";
-    //    }
-    //}
+    private string _imageUrl;
+    public string ImageUrl
+    {
+        get => _imageUrl;
+        set
+        {
+            _imageUrl = $"https://firebasestorage.googleapis.com/v0/b/applivros-ea1a0.appspot.com/o/Books%2F{value}?alt=media&token=a393ffdd-4ac8-4bd0-b8ca-40dd9fc3dba1&_gl=1*1d5u7jy*_ga*MTI3MDEwMjkyOC4xNjk2MDEyOTk2*_ga_CW55HF8NVT*MTY5NzQ4MjE3MC41LjEuMTY5NzQ4MjUwNS40My4wLjA.";
+        }
+    }
 
     public int PageTotal { get; set; }
     public bool Check { get; set; }
