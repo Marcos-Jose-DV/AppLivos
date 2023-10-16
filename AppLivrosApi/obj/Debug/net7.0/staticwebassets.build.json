@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "oZJ+AWcYxNibOIgqJJpAGejfzvUi0CJU+iv6iDIZWRo=",
+  "Hash": "BmRPyMjfq2yjjq6dHSVQh3YIdqbrby/9zHy+GpFG7KY=",
   "Source": "AppLivrosApi",
   "BasePath": "_content/AppLivrosApi",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "AppLivrosApi\\wwwroot",
       "Source": "AppLivrosApi",
-      "ContentRoot": "D:\\Projetos GitHub\\C#\\FullStack\\AppLivos\\AppLivrosApi\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\AlexandreRibeiro\\Desktop\\AppLivros\\AppLivos\\AppLivrosApi\\wwwroot\\",
       "BasePath": "_content/AppLivrosApi",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "D:\\Projetos GitHub\\C#\\FullStack\\AppLivos\\AppLivrosApi\\wwwroot\\images\\Books\\arquilimpa.jpg",
+      "Identity": "C:\\Users\\AlexandreRibeiro\\Desktop\\AppLivros\\AppLivos\\AppLivrosApi\\wwwroot\\images\\Books\\arquilimpa.jpg",
       "SourceId": "AppLivrosApi",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projetos GitHub\\C#\\FullStack\\AppLivos\\AppLivrosApi\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\AlexandreRibeiro\\Desktop\\AppLivros\\AppLivos\\AppLivrosApi\\wwwroot\\",
       "BasePath": "_content/AppLivrosApi",
       "RelativePath": "images/Books/arquilimpa.jpg",
       "AssetKind": "All",
@@ -34,10 +34,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Books\\arquilimpa.jpg"
     },
     {
-      "Identity": "D:\\Projetos GitHub\\C#\\FullStack\\AppLivos\\AppLivrosApi\\wwwroot\\images\\Books\\codigolimpo.jpg",
+      "Identity": "C:\\Users\\AlexandreRibeiro\\Desktop\\AppLivros\\AppLivos\\AppLivrosApi\\wwwroot\\images\\Books\\codigolimpo.jpg",
       "SourceId": "AppLivrosApi",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projetos GitHub\\C#\\FullStack\\AppLivos\\AppLivrosApi\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\AlexandreRibeiro\\Desktop\\AppLivros\\AppLivos\\AppLivrosApi\\wwwroot\\",
       "BasePath": "_content/AppLivrosApi",
       "RelativePath": "images/Books/codigolimpo.jpg",
       "AssetKind": "All",
@@ -51,10 +51,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Books\\codigolimpo.jpg"
     },
     {
-      "Identity": "D:\\Projetos GitHub\\C#\\FullStack\\AppLivos\\AppLivrosApi\\wwwroot\\images\\Books\\codlimpo.jpg",
+      "Identity": "C:\\Users\\AlexandreRibeiro\\Desktop\\AppLivros\\AppLivos\\AppLivrosApi\\wwwroot\\images\\Books\\codlimpo.jpg",
       "SourceId": "AppLivrosApi",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projetos GitHub\\C#\\FullStack\\AppLivos\\AppLivrosApi\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\AlexandreRibeiro\\Desktop\\AppLivros\\AppLivos\\AppLivrosApi\\wwwroot\\",
       "BasePath": "_content/AppLivrosApi",
       "RelativePath": "images/Books/codlimpo.jpg",
       "AssetKind": "All",
@@ -68,10 +68,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Books\\codlimpo.jpg"
     },
     {
-      "Identity": "D:\\Projetos GitHub\\C#\\FullStack\\AppLivos\\AppLivrosApi\\wwwroot\\images\\Books\\devlimpo.jpg",
+      "Identity": "C:\\Users\\AlexandreRibeiro\\Desktop\\AppLivros\\AppLivos\\AppLivrosApi\\wwwroot\\images\\Books\\devlimpo.jpg",
       "SourceId": "AppLivrosApi",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projetos GitHub\\C#\\FullStack\\AppLivos\\AppLivrosApi\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\AlexandreRibeiro\\Desktop\\AppLivros\\AppLivos\\AppLivrosApi\\wwwroot\\",
       "BasePath": "_content/AppLivrosApi",
       "RelativePath": "images/Books/devlimpo.jpg",
       "AssetKind": "All",
@@ -85,10 +85,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Books\\devlimpo.jpg"
     },
     {
-      "Identity": "D:\\Projetos GitHub\\C#\\FullStack\\AppLivos\\AppLivrosApi\\wwwroot\\images\\categories\\autoajuda.png",
+      "Identity": "C:\\Users\\AlexandreRibeiro\\Desktop\\AppLivros\\AppLivos\\AppLivrosApi\\wwwroot\\images\\categories\\autoajuda.png",
       "SourceId": "AppLivrosApi",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projetos GitHub\\C#\\FullStack\\AppLivos\\AppLivrosApi\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\AlexandreRibeiro\\Desktop\\AppLivros\\AppLivos\\AppLivrosApi\\wwwroot\\",
       "BasePath": "_content/AppLivrosApi",
       "RelativePath": "images/categories/autoajuda.png",
       "AssetKind": "All",
@@ -102,10 +102,10 @@
       "OriginalItemSpec": "wwwroot\\images\\categories\\autoajuda.png"
     },
     {
-      "Identity": "D:\\Projetos GitHub\\C#\\FullStack\\AppLivos\\AppLivrosApi\\wwwroot\\images\\categories\\aventura.png",
+      "Identity": "C:\\Users\\AlexandreRibeiro\\Desktop\\AppLivros\\AppLivos\\AppLivrosApi\\wwwroot\\images\\categories\\aventura.png",
       "SourceId": "AppLivrosApi",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projetos GitHub\\C#\\FullStack\\AppLivos\\AppLivrosApi\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\AlexandreRibeiro\\Desktop\\AppLivros\\AppLivos\\AppLivrosApi\\wwwroot\\",
       "BasePath": "_content/AppLivrosApi",
       "RelativePath": "images/categories/aventura.png",
       "AssetKind": "All",
@@ -119,10 +119,10 @@
       "OriginalItemSpec": "wwwroot\\images\\categories\\aventura.png"
     },
     {
-      "Identity": "D:\\Projetos GitHub\\C#\\FullStack\\AppLivos\\AppLivrosApi\\wwwroot\\images\\categories\\biografia.png",
+      "Identity": "C:\\Users\\AlexandreRibeiro\\Desktop\\AppLivros\\AppLivos\\AppLivrosApi\\wwwroot\\images\\categories\\biografia.png",
       "SourceId": "AppLivrosApi",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projetos GitHub\\C#\\FullStack\\AppLivos\\AppLivrosApi\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\AlexandreRibeiro\\Desktop\\AppLivros\\AppLivos\\AppLivrosApi\\wwwroot\\",
       "BasePath": "_content/AppLivrosApi",
       "RelativePath": "images/categories/biografia.png",
       "AssetKind": "All",
@@ -136,10 +136,10 @@
       "OriginalItemSpec": "wwwroot\\images\\categories\\biografia.png"
     },
     {
-      "Identity": "D:\\Projetos GitHub\\C#\\FullStack\\AppLivos\\AppLivrosApi\\wwwroot\\images\\categories\\fantasia.png",
+      "Identity": "C:\\Users\\AlexandreRibeiro\\Desktop\\AppLivros\\AppLivos\\AppLivrosApi\\wwwroot\\images\\categories\\fantasia.png",
       "SourceId": "AppLivrosApi",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projetos GitHub\\C#\\FullStack\\AppLivos\\AppLivrosApi\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\AlexandreRibeiro\\Desktop\\AppLivros\\AppLivos\\AppLivrosApi\\wwwroot\\",
       "BasePath": "_content/AppLivrosApi",
       "RelativePath": "images/categories/fantasia.png",
       "AssetKind": "All",
@@ -153,10 +153,10 @@
       "OriginalItemSpec": "wwwroot\\images\\categories\\fantasia.png"
     },
     {
-      "Identity": "D:\\Projetos GitHub\\C#\\FullStack\\AppLivos\\AppLivrosApi\\wwwroot\\images\\categories\\ficcao.png",
+      "Identity": "C:\\Users\\AlexandreRibeiro\\Desktop\\AppLivros\\AppLivos\\AppLivrosApi\\wwwroot\\images\\categories\\ficcao.png",
       "SourceId": "AppLivrosApi",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projetos GitHub\\C#\\FullStack\\AppLivos\\AppLivrosApi\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\AlexandreRibeiro\\Desktop\\AppLivros\\AppLivos\\AppLivrosApi\\wwwroot\\",
       "BasePath": "_content/AppLivrosApi",
       "RelativePath": "images/categories/ficcao.png",
       "AssetKind": "All",
@@ -170,10 +170,10 @@
       "OriginalItemSpec": "wwwroot\\images\\categories\\ficcao.png"
     },
     {
-      "Identity": "D:\\Projetos GitHub\\C#\\FullStack\\AppLivos\\AppLivrosApi\\wwwroot\\images\\categories\\historia.png",
+      "Identity": "C:\\Users\\AlexandreRibeiro\\Desktop\\AppLivros\\AppLivos\\AppLivrosApi\\wwwroot\\images\\categories\\historia.png",
       "SourceId": "AppLivrosApi",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projetos GitHub\\C#\\FullStack\\AppLivos\\AppLivrosApi\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\AlexandreRibeiro\\Desktop\\AppLivros\\AppLivos\\AppLivrosApi\\wwwroot\\",
       "BasePath": "_content/AppLivrosApi",
       "RelativePath": "images/categories/historia.png",
       "AssetKind": "All",
@@ -187,10 +187,10 @@
       "OriginalItemSpec": "wwwroot\\images\\categories\\historia.png"
     },
     {
-      "Identity": "D:\\Projetos GitHub\\C#\\FullStack\\AppLivos\\AppLivrosApi\\wwwroot\\images\\categories\\misterio.png",
+      "Identity": "C:\\Users\\AlexandreRibeiro\\Desktop\\AppLivros\\AppLivos\\AppLivrosApi\\wwwroot\\images\\categories\\misterio.png",
       "SourceId": "AppLivrosApi",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projetos GitHub\\C#\\FullStack\\AppLivos\\AppLivrosApi\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\AlexandreRibeiro\\Desktop\\AppLivros\\AppLivos\\AppLivrosApi\\wwwroot\\",
       "BasePath": "_content/AppLivrosApi",
       "RelativePath": "images/categories/misterio.png",
       "AssetKind": "All",
@@ -204,10 +204,10 @@
       "OriginalItemSpec": "wwwroot\\images\\categories\\misterio.png"
     },
     {
-      "Identity": "D:\\Projetos GitHub\\C#\\FullStack\\AppLivos\\AppLivrosApi\\wwwroot\\images\\categories\\naoficcao.png",
+      "Identity": "C:\\Users\\AlexandreRibeiro\\Desktop\\AppLivros\\AppLivos\\AppLivrosApi\\wwwroot\\images\\categories\\naoficcao.png",
       "SourceId": "AppLivrosApi",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projetos GitHub\\C#\\FullStack\\AppLivos\\AppLivrosApi\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\AlexandreRibeiro\\Desktop\\AppLivros\\AppLivos\\AppLivrosApi\\wwwroot\\",
       "BasePath": "_content/AppLivrosApi",
       "RelativePath": "images/categories/naoficcao.png",
       "AssetKind": "All",
@@ -221,10 +221,10 @@
       "OriginalItemSpec": "wwwroot\\images\\categories\\naoficcao.png"
     },
     {
-      "Identity": "D:\\Projetos GitHub\\C#\\FullStack\\AppLivos\\AppLivrosApi\\wwwroot\\images\\categories\\policial.png",
+      "Identity": "C:\\Users\\AlexandreRibeiro\\Desktop\\AppLivros\\AppLivos\\AppLivrosApi\\wwwroot\\images\\categories\\policial.png",
       "SourceId": "AppLivrosApi",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projetos GitHub\\C#\\FullStack\\AppLivos\\AppLivrosApi\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\AlexandreRibeiro\\Desktop\\AppLivros\\AppLivos\\AppLivrosApi\\wwwroot\\",
       "BasePath": "_content/AppLivrosApi",
       "RelativePath": "images/categories/policial.png",
       "AssetKind": "All",
@@ -238,10 +238,10 @@
       "OriginalItemSpec": "wwwroot\\images\\categories\\policial.png"
     },
     {
-      "Identity": "D:\\Projetos GitHub\\C#\\FullStack\\AppLivos\\AppLivrosApi\\wwwroot\\images\\categories\\romance.png",
+      "Identity": "C:\\Users\\AlexandreRibeiro\\Desktop\\AppLivros\\AppLivos\\AppLivrosApi\\wwwroot\\images\\categories\\romance.png",
       "SourceId": "AppLivrosApi",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projetos GitHub\\C#\\FullStack\\AppLivos\\AppLivrosApi\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\AlexandreRibeiro\\Desktop\\AppLivros\\AppLivos\\AppLivrosApi\\wwwroot\\",
       "BasePath": "_content/AppLivrosApi",
       "RelativePath": "images/categories/romance.png",
       "AssetKind": "All",
@@ -255,10 +255,10 @@
       "OriginalItemSpec": "wwwroot\\images\\categories\\romance.png"
     },
     {
-      "Identity": "D:\\Projetos GitHub\\C#\\FullStack\\AppLivos\\AppLivrosApi\\wwwroot\\images\\categories\\tecnologia.png",
+      "Identity": "C:\\Users\\AlexandreRibeiro\\Desktop\\AppLivros\\AppLivos\\AppLivrosApi\\wwwroot\\images\\categories\\tecnologia.png",
       "SourceId": "AppLivrosApi",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projetos GitHub\\C#\\FullStack\\AppLivos\\AppLivrosApi\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\AlexandreRibeiro\\Desktop\\AppLivros\\AppLivos\\AppLivrosApi\\wwwroot\\",
       "BasePath": "_content/AppLivrosApi",
       "RelativePath": "images/categories/tecnologia.png",
       "AssetKind": "All",
@@ -272,10 +272,10 @@
       "OriginalItemSpec": "wwwroot\\images\\categories\\tecnologia.png"
     },
     {
-      "Identity": "D:\\Projetos GitHub\\C#\\FullStack\\AppLivos\\AppLivrosApi\\wwwroot\\images\\Icons\\book.svg",
+      "Identity": "C:\\Users\\AlexandreRibeiro\\Desktop\\AppLivros\\AppLivos\\AppLivrosApi\\wwwroot\\images\\Icons\\book.svg",
       "SourceId": "AppLivrosApi",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projetos GitHub\\C#\\FullStack\\AppLivos\\AppLivrosApi\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\AlexandreRibeiro\\Desktop\\AppLivros\\AppLivos\\AppLivrosApi\\wwwroot\\",
       "BasePath": "_content/AppLivrosApi",
       "RelativePath": "images/Icons/book.svg",
       "AssetKind": "All",
@@ -289,10 +289,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Icons\\book.svg"
     },
     {
-      "Identity": "D:\\Projetos GitHub\\C#\\FullStack\\AppLivos\\AppLivrosApi\\wwwroot\\images\\Icons\\category.svg",
+      "Identity": "C:\\Users\\AlexandreRibeiro\\Desktop\\AppLivros\\AppLivos\\AppLivrosApi\\wwwroot\\images\\Icons\\category.svg",
       "SourceId": "AppLivrosApi",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projetos GitHub\\C#\\FullStack\\AppLivos\\AppLivrosApi\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\AlexandreRibeiro\\Desktop\\AppLivros\\AppLivos\\AppLivrosApi\\wwwroot\\",
       "BasePath": "_content/AppLivrosApi",
       "RelativePath": "images/Icons/category.svg",
       "AssetKind": "All",
@@ -306,10 +306,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Icons\\category.svg"
     },
     {
-      "Identity": "D:\\Projetos GitHub\\C#\\FullStack\\AppLivos\\AppLivrosApi\\wwwroot\\images\\Icons\\home.svg",
+      "Identity": "C:\\Users\\AlexandreRibeiro\\Desktop\\AppLivros\\AppLivos\\AppLivrosApi\\wwwroot\\images\\Icons\\home.svg",
       "SourceId": "AppLivrosApi",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projetos GitHub\\C#\\FullStack\\AppLivos\\AppLivrosApi\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\AlexandreRibeiro\\Desktop\\AppLivros\\AppLivos\\AppLivrosApi\\wwwroot\\",
       "BasePath": "_content/AppLivrosApi",
       "RelativePath": "images/Icons/home.svg",
       "AssetKind": "All",

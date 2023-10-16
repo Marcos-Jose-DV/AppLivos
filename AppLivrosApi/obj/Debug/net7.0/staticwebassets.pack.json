@@ -1,75 +1,75 @@
 {
   "Files": [
     {
-      "Id": "D:\\Projetos GitHub\\C#\\FullStack\\AppLivos\\AppLivrosApi\\wwwroot\\images\\Books\\arquilimpa.jpg",
+      "Id": "C:\\Users\\AlexandreRibeiro\\Desktop\\AppLivros\\AppLivos\\AppLivrosApi\\wwwroot\\images\\Books\\arquilimpa.jpg",
       "PackagePath": "staticwebassets\\images\\Books\\arquilimpa.jpg"
     },
     {
-      "Id": "D:\\Projetos GitHub\\C#\\FullStack\\AppLivos\\AppLivrosApi\\wwwroot\\images\\Books\\codigolimpo.jpg",
+      "Id": "C:\\Users\\AlexandreRibeiro\\Desktop\\AppLivros\\AppLivos\\AppLivrosApi\\wwwroot\\images\\Books\\codigolimpo.jpg",
       "PackagePath": "staticwebassets\\images\\Books\\codigolimpo.jpg"
     },
     {
-      "Id": "D:\\Projetos GitHub\\C#\\FullStack\\AppLivos\\AppLivrosApi\\wwwroot\\images\\Books\\codlimpo.jpg",
+      "Id": "C:\\Users\\AlexandreRibeiro\\Desktop\\AppLivros\\AppLivos\\AppLivrosApi\\wwwroot\\images\\Books\\codlimpo.jpg",
       "PackagePath": "staticwebassets\\images\\Books\\codlimpo.jpg"
     },
     {
-      "Id": "D:\\Projetos GitHub\\C#\\FullStack\\AppLivos\\AppLivrosApi\\wwwroot\\images\\Books\\devlimpo.jpg",
+      "Id": "C:\\Users\\AlexandreRibeiro\\Desktop\\AppLivros\\AppLivos\\AppLivrosApi\\wwwroot\\images\\Books\\devlimpo.jpg",
       "PackagePath": "staticwebassets\\images\\Books\\devlimpo.jpg"
     },
     {
-      "Id": "D:\\Projetos GitHub\\C#\\FullStack\\AppLivos\\AppLivrosApi\\wwwroot\\images\\Icons\\book.svg",
+      "Id": "C:\\Users\\AlexandreRibeiro\\Desktop\\AppLivros\\AppLivos\\AppLivrosApi\\wwwroot\\images\\Icons\\book.svg",
       "PackagePath": "staticwebassets\\images\\Icons\\book.svg"
     },
     {
-      "Id": "D:\\Projetos GitHub\\C#\\FullStack\\AppLivos\\AppLivrosApi\\wwwroot\\images\\Icons\\category.svg",
+      "Id": "C:\\Users\\AlexandreRibeiro\\Desktop\\AppLivros\\AppLivos\\AppLivrosApi\\wwwroot\\images\\Icons\\category.svg",
       "PackagePath": "staticwebassets\\images\\Icons\\category.svg"
     },
     {
-      "Id": "D:\\Projetos GitHub\\C#\\FullStack\\AppLivos\\AppLivrosApi\\wwwroot\\images\\Icons\\home.svg",
+      "Id": "C:\\Users\\AlexandreRibeiro\\Desktop\\AppLivros\\AppLivos\\AppLivrosApi\\wwwroot\\images\\Icons\\home.svg",
       "PackagePath": "staticwebassets\\images\\Icons\\home.svg"
     },
     {
-      "Id": "D:\\Projetos GitHub\\C#\\FullStack\\AppLivos\\AppLivrosApi\\wwwroot\\images\\categories\\autoajuda.png",
+      "Id": "C:\\Users\\AlexandreRibeiro\\Desktop\\AppLivros\\AppLivos\\AppLivrosApi\\wwwroot\\images\\categories\\autoajuda.png",
       "PackagePath": "staticwebassets\\images\\categories\\autoajuda.png"
     },
     {
-      "Id": "D:\\Projetos GitHub\\C#\\FullStack\\AppLivos\\AppLivrosApi\\wwwroot\\images\\categories\\aventura.png",
+      "Id": "C:\\Users\\AlexandreRibeiro\\Desktop\\AppLivros\\AppLivos\\AppLivrosApi\\wwwroot\\images\\categories\\aventura.png",
       "PackagePath": "staticwebassets\\images\\categories\\aventura.png"
     },
     {
-      "Id": "D:\\Projetos GitHub\\C#\\FullStack\\AppLivos\\AppLivrosApi\\wwwroot\\images\\categories\\biografia.png",
+      "Id": "C:\\Users\\AlexandreRibeiro\\Desktop\\AppLivros\\AppLivos\\AppLivrosApi\\wwwroot\\images\\categories\\biografia.png",
       "PackagePath": "staticwebassets\\images\\categories\\biografia.png"
     },
     {
-      "Id": "D:\\Projetos GitHub\\C#\\FullStack\\AppLivos\\AppLivrosApi\\wwwroot\\images\\categories\\fantasia.png",
+      "Id": "C:\\Users\\AlexandreRibeiro\\Desktop\\AppLivros\\AppLivos\\AppLivrosApi\\wwwroot\\images\\categories\\fantasia.png",
       "PackagePath": "staticwebassets\\images\\categories\\fantasia.png"
     },
     {
-      "Id": "D:\\Projetos GitHub\\C#\\FullStack\\AppLivos\\AppLivrosApi\\wwwroot\\images\\categories\\ficcao.png",
+      "Id": "C:\\Users\\AlexandreRibeiro\\Desktop\\AppLivros\\AppLivos\\AppLivrosApi\\wwwroot\\images\\categories\\ficcao.png",
       "PackagePath": "staticwebassets\\images\\categories\\ficcao.png"
     },
     {
-      "Id": "D:\\Projetos GitHub\\C#\\FullStack\\AppLivos\\AppLivrosApi\\wwwroot\\images\\categories\\historia.png",
+      "Id": "C:\\Users\\AlexandreRibeiro\\Desktop\\AppLivros\\AppLivos\\AppLivrosApi\\wwwroot\\images\\categories\\historia.png",
       "PackagePath": "staticwebassets\\images\\categories\\historia.png"
     },
     {
-      "Id": "D:\\Projetos GitHub\\C#\\FullStack\\AppLivos\\AppLivrosApi\\wwwroot\\images\\categories\\misterio.png",
+      "Id": "C:\\Users\\AlexandreRibeiro\\Desktop\\AppLivros\\AppLivos\\AppLivrosApi\\wwwroot\\images\\categories\\misterio.png",
       "PackagePath": "staticwebassets\\images\\categories\\misterio.png"
     },
     {
-      "Id": "D:\\Projetos GitHub\\C#\\FullStack\\AppLivos\\AppLivrosApi\\wwwroot\\images\\categories\\naoficcao.png",
+      "Id": "C:\\Users\\AlexandreRibeiro\\Desktop\\AppLivros\\AppLivos\\AppLivrosApi\\wwwroot\\images\\categories\\naoficcao.png",
       "PackagePath": "staticwebassets\\images\\categories\\naoficcao.png"
     },
     {
-      "Id": "D:\\Projetos GitHub\\C#\\FullStack\\AppLivos\\AppLivrosApi\\wwwroot\\images\\categories\\policial.png",
+      "Id": "C:\\Users\\AlexandreRibeiro\\Desktop\\AppLivros\\AppLivos\\AppLivrosApi\\wwwroot\\images\\categories\\policial.png",
       "PackagePath": "staticwebassets\\images\\categories\\policial.png"
     },
     {
-      "Id": "D:\\Projetos GitHub\\C#\\FullStack\\AppLivos\\AppLivrosApi\\wwwroot\\images\\categories\\romance.png",
+      "Id": "C:\\Users\\AlexandreRibeiro\\Desktop\\AppLivros\\AppLivos\\AppLivrosApi\\wwwroot\\images\\categories\\romance.png",
       "PackagePath": "staticwebassets\\images\\categories\\romance.png"
     },
     {
-      "Id": "D:\\Projetos GitHub\\C#\\FullStack\\AppLivos\\AppLivrosApi\\wwwroot\\images\\categories\\tecnologia.png",
+      "Id": "C:\\Users\\AlexandreRibeiro\\Desktop\\AppLivros\\AppLivos\\AppLivrosApi\\wwwroot\\images\\categories\\tecnologia.png",
       "PackagePath": "staticwebassets\\images\\categories\\tecnologia.png"
     },
     {

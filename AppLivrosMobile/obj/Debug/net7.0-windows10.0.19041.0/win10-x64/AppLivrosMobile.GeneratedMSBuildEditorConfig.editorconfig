@@ -1,0 +1,53 @@
+is_global = true
+build_property.TargetFramework = net7.0-windows10.0.19041.0
+build_property.TargetPlatformMinVersion = 10.0.17763.0
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 9A19103F-16F7-4668-BE54-9A1E7A4F7556
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = AppLivrosMobile
+build_property.ProjectDir = C:\Users\AlexandreRibeiro\Desktop\AppLivros\AppLivos\AppLivrosMobile\
+
+[C:/Users/AlexandreRibeiro/Desktop/AppLivros/AppLivos/AppLivrosMobile/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AppLivrosMobile.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+
+[C:/Users/AlexandreRibeiro/Desktop/AppLivros/AppLivos/AppLivrosMobile/AppShell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AppLivrosMobile.AppShell.xaml
+build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
+build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
+
+[C:/Users/AlexandreRibeiro/Desktop/AppLivros/AppLivos/AppLivrosMobile/MVVM/Views/BookCategoryIdPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AppLivrosMobile.MVVM.Views.BookCategoryIdPage.xaml
+build_metadata.AdditionalFiles.TargetPath = MVVM\Views\BookCategoryIdPage.xaml
+build_metadata.AdditionalFiles.RelativePath = MVVM\Views\BookCategoryIdPage.xaml
+
+[C:/Users/AlexandreRibeiro/Desktop/AppLivros/AppLivos/AppLivrosMobile/MVVM/Views/BookPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AppLivrosMobile.MVVM.Views.BookPage.xaml
+build_metadata.AdditionalFiles.TargetPath = MVVM\Views\BookPage.xaml
+build_metadata.AdditionalFiles.RelativePath = MVVM\Views\BookPage.xaml
+
+[C:/Users/AlexandreRibeiro/Desktop/AppLivros/AppLivos/AppLivrosMobile/MVVM/Views/HomePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AppLivrosMobile.MVVM.Views.HomePage.xaml
+build_metadata.AdditionalFiles.TargetPath = MVVM\Views\HomePage.xaml
+build_metadata.AdditionalFiles.RelativePath = MVVM\Views\HomePage.xaml
+
+[C:/Users/AlexandreRibeiro/Desktop/AppLivros/AppLivos/AppLivrosMobile/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AppLivrosMobile.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
+
+[C:/Users/AlexandreRibeiro/Desktop/AppLivros/AppLivos/AppLivrosMobile/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AppLivrosMobile.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml

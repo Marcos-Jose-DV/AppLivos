@@ -59,7 +59,7 @@ public class LivrosController : Controller
         book.PageTotal = model.PageTotal;
         book.Check = model.Check;
         book.PageIndex = model.PageIndex;
-        book.DateCreate = DateTime.Now;
+        book.DateCreate = DateTime.UtcNow;
 
         _context.Books.Update(book);
         await _context.SaveChangesAsync();    
