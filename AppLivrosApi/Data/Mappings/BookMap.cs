@@ -62,5 +62,9 @@ public class BookMap : IEntityTypeConfiguration<Book>
             .IsRequired()
             .HasColumnName("CategoryId")
             .HasColumnType("INT");
+
+        //builder.Property(x => x.DateCreate)
+        //    .HasColumnName("DateCreate")
+        //    .HasColumnType("DATE");
     }
 }

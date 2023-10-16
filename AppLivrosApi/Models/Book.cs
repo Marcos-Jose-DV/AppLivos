@@ -10,6 +10,6 @@ public class Book
     public int PageTotal { get; set; }
     public bool Check { get; set; }
     public int PageIndex { get; set; } = 0;
-
+    public DateTime DateCreate { get; set; }
     public int CategoryId { get; set; }
 }

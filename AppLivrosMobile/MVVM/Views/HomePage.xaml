@@ -2,46 +2,120 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AppLivrosMobile.MVVM.Views.HomePage"
-             Title="HomePage">
+             xmlns:models="clr-namespace:AppLivrosMobile.MVVM.Models"
+             Shell.NavBarIsVisible="False"
+             xmlns:converter="clr-namespace:AppLivrosMobile.Converter"
+             Title="HomePage"
+             BackgroundColor="{StaticResource Primary}">
 
-    <VerticalStackLayout Padding="10, 15">
-        
-        <Label>
-            <Label.FormattedText>
-                <FormattedString>
-                    <Span Text="Olá, &#10;"
-                    TextColor="{StaticResource Primary}"
-                    FontSize="14"
-                    FontAttributes="Bold"/>
-                    <Span Text="Marcos"
-                    TextColor="{StaticResource Tertiary}"
-                    FontSize="18"
-                    FontAttributes="Bold"/>
-                </FormattedString>
-            </Label.FormattedText>
-        </Label>
+    <ScrollView>
+        <Grid>
+            <VerticalStackLayout Padding="10, 15">
+
+                <Label>
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="Olá, &#10;"
+                          Style="{StaticResource H2}"/>
+                            <Span Text="Marcos"
+                          Style="{StaticResource H2}"/>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
 
 
-        <CollectionView ItemsSource="{Binding Categories}" 
+                <CollectionView ItemsSource="{Binding Categories}" 
                     SelectionMode="Single"
                     SelectedItem="{Binding 
-                    SelectedCategory, Mode=TwoWay}">
-            <CollectionView.ItemsLayout>
-                <GridItemsLayout Orientation="Horizontal"/>
-            </CollectionView.ItemsLayout>
-            <CollectionView.ItemTemplate>
-                <DataTemplate>
-                    <Border  WidthRequest="150" Margin="10" Padding="10" StrokeShape="RoundRectangle 20">
-                        <HorizontalStackLayout HorizontalOptions="Center" VerticalOptions="Center" Spacing="10">
-                            <Image Source="{Binding ImageUrl}" Aspect="AspectFill" WidthRequest="20" HeightRequest="20"/>
-                            <Label HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Text="{Binding Name}"/>
-                        </HorizontalStackLayout>
-                    </Border>
-                </DataTemplate>
-            </CollectionView.ItemTemplate>
-        </CollectionView>
+                    SelectedCategory, Mode=TwoWay}" >
+                    <CollectionView.ItemsLayout>
+                        <GridItemsLayout Orientation="Horizontal"/>
+                    </CollectionView.ItemsLayout>
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate x:DataType="models:Category">
+                            <Border  WidthRequest="150" Margin="10" Padding="10" StrokeShape="RoundRectangle 15" >
+                                <HorizontalStackLayout HorizontalOptions="Center" VerticalOptions="Center" Spacing="10">
+                                    <Image Source="{Binding ImageUrl}" Aspect="AspectFill" WidthRequest="20"/>
+                                    <Label Text="{Binding Name}" Style="{StaticResource H3}"/>
+                                </HorizontalStackLayout>
+                            </Border>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
 
-        <Label Text="Seu Livros adiciondo recentimente"/>
 
-    </VerticalStackLayout>
+                <Label Text="Mais Recentes" Style="{StaticResource H1}" />
+
+                <CollectionView ItemsSource="{Binding Books}">
+
+                    <CollectionView.ItemsLayout>
+                        <GridItemsLayout Orientation="Horizontal" />
+                    </CollectionView.ItemsLayout>
+
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate x:DataType="models:Book">
+                            <!--<Border StrokeShape="RoundRectangle 10"
+                            StrokeThickness="0.5"
+                            Stroke="Gray" 
+                            Margin="5"
+                            Padding="10">-->
+                            <Frame HasShadow="True" 
+                                   BorderColor="Gray"
+                                   Margin="5"
+                                   Padding="10">
+                                <Grid Padding="0" RowDefinitions="*,Auto" RowSpacing="10">
+                                    <VerticalStackLayout Spacing="5">
+                                        <Grid ColumnDefinitions="Auto,Auto" ColumnSpacing="10">
+                                            <Image Source="{Binding ImageUrl}" Aspect="AspectFit"
+                                                   WidthRequest="100"
+                                                   VerticalOptions="Center"
+                                                   HorizontalOptions="Start"
+                                                   Opacity=".9"/>
+
+                                            <VerticalStackLayout Grid.Column="1" Margin="0" Spacing="10">
+                                                <Button Text="Atualizar"
+                                                    FontAttributes="Bold"
+                                                    FontSize="16"
+                                                    TextColor="{StaticResource White}"
+                                                    BackgroundColor="Blue"/>
+                                                <Button Text="Excluir"
+                                                    FontAttributes="Bold"
+                                                    FontSize="16"
+                                                    BackgroundColor="Red"                                            
+                                                    TextColor="{StaticResource White}"/>
+
+                                                <Label  Text="{Binding Check, Converter={StaticResource CheckViewBook}}" 
+                                                        Style="{StaticResource H4}" 
+                                                        HorizontalOptions="Center"/>
+                                            </VerticalStackLayout>
+                                        </Grid>
+
+                                        <Label  Text="{Binding PageTotal, StringFormat='Total de paginas {0}'}" Style="{StaticResource H4}"/>
+                                        <Label  Text="{Binding PageIndex, StringFormat='Total de paginas lidas {0}'}" Style="{StaticResource H4}"/>
+
+                                    </VerticalStackLayout>
+
+
+                                </Grid>
+                            </Frame>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+
+            </VerticalStackLayout>
+
+            <Grid IsVisible="{Binding IsBusy}">
+                <BoxView Color="{StaticResource Primary}"/>
+                <VerticalStackLayout HorizontalOptions="Center"
+                     VerticalOptions="Center">
+                    <ActivityIndicator IsRunning="True"
+                       Color="white"
+                       HorizontalOptions="Center"/>
+                    <Label Text="Carregando..."
+                           TextColor="{StaticResource White}"
+                           HorizontalOptions="Center"/>
+                </VerticalStackLayout>
+            </Grid>
+        </Grid>
+    </ScrollView>
 </ContentPage>

@@ -6,29 +6,16 @@
              Title="AppShell">
 
     <TabBar>
-        <Tab Icon="dotnet_bot" Title="Inicio"  >
-
-            <ShellContent Title="Inicio" 
-              Icon="dotnet_bot" 
-              ContentTemplate="{DataTemplate views:HomePage}"
-              Route="HomePage"/>
+        <Tab  Icon="home.svg" Title="Inicio" >
+            <ShellContent ContentTemplate="{DataTemplate views:HomePage}" Route="HomePage"/>
         </Tab>
 
-        <Tab Icon="dotnet_bot" Title="Inicio">
-
-            <ShellContent Title="Inicio" 
-              Icon="dotnet_bot" 
-              ContentTemplate="{DataTemplate views:BookPage}"
-              Route="BookPage"/>
+        <Tab  Icon="category.svg" Title="Categorias">
+            <ShellContent ContentTemplate="{DataTemplate views:BookPage}" Route="BookPage"/>
         </Tab>
 
-        <Tab Icon="dotnet_bot" Title="Inicio">
-            <ShellContent Title="Inicio" 
-              Icon="dotnet_bot" 
-              ContentTemplate="{DataTemplate views:HomePage}"
-              Route="HomePage"/>
+        <Tab Icon="book.svg" Title="Livros">
+            <ShellContent  ContentTemplate="{DataTemplate views:HomePage}" Route="HomePage"/>
         </Tab>
     </TabBar>
-
-
 </Shell>

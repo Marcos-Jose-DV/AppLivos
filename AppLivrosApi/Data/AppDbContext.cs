@@ -43,7 +43,5 @@ public class AppDbContext : DbContext
                 new Category(10, "Autoajuda", "autoajuda", "autoajuda.png"),
                 new Category(11, "Policial", "policial", "policial.png")
             );
-
     }
-
 }

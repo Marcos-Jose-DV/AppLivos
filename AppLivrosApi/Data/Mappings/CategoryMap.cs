@@ -35,7 +35,7 @@ public class CategoryMap : IEntityTypeConfiguration<Category>
             .IsRequired()
             .HasColumnName("ImageUrl")
             .HasColumnType("NVARCHAR")
-            .HasMaxLength(80);
+            .HasMaxLength(200);
 
         // Índices
         builder
