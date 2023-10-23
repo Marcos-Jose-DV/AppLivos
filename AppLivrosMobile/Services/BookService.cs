@@ -13,29 +13,26 @@ public class BookService
     public BookService(HttpClient client)
         => _client = client;
 
-    public async ValueTask<IEnumerable<Book>> GetBooksAsync()
+    public async ValueTask<IEnumerable<Book>> GetBooksAsync(string query, string param)
     {
-        if (_books is null)
+        var response = await _client.GetAsync($"{AppConstants.HttpClientName}/v1/{query}/{param}");
+        if (response.IsSuccessStatusCode)
         {
-            var response = await _client.GetAsync($"{AppConstants.HttpClientName}/v1/livros");
-            if (response.IsSuccessStatusCode)
-            {
-                var content = await response.Content.ReadAsStringAsync();
-                if (!string.IsNullOrEmpty(content))
-                    _books = JsonSerializer.Deserialize<IEnumerable<Book>>(content, new JsonSerializerOptions()
-                    {
-                        PropertyNameCaseInsensitive = true,
-                    });
-            }
-            else
-            {
-                return Enumerable.Empty<Book>();
-            }
+            var content = await response.Content.ReadAsStringAsync();
+            if (!string.IsNullOrEmpty(content))
+                _books = JsonSerializer.Deserialize<IEnumerable<Book>>(content, new JsonSerializerOptions()
+                {
+                    PropertyNameCaseInsensitive = true,
+                });
+        }
+        else
+        {
+            return Enumerable.Empty<Book>();
         }
 
         return _books;
     }
 
-    public async ValueTask<IEnumerable<Book>> GetMainBookAsync()
-        => await GetBooksAsync();
+    public async ValueTask<IEnumerable<Book>> GetMainBookAsync(string query, string param)
+        => await GetBooksAsync(query, param);
 }

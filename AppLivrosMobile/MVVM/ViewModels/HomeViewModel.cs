@@ -4,6 +4,7 @@ using AppLivrosMobile.Services;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using System.ComponentModel;
+using System.Linq;
 using System.Windows.Input;
 
 namespace AppLivrosMobile.MVVM.ViewModels;
@@ -20,12 +21,12 @@ public partial class HomeViewModel : ObservableObject
     Book _selectedBook;
 
     [ObservableProperty]
-    bool _IsBusy;
+    bool _IsBusy, _refreshing;
 
     [ObservableProperty]
     IEnumerable<Category> _categories;
     [ObservableProperty]
-    IEnumerable<Book> _books;
+    IEnumerable<Book> _books, _booksCheck;
 
    
     public HomeViewModel(CategoryService categoryService, BookService bookService, INavigationService navigation)
@@ -35,8 +36,16 @@ public partial class HomeViewModel : ObservableObject
         _bookService = bookService;
         _navigationService = navigation;
         PropertyChanged += BookPageViewModelPropertyChanged;
-
     }
+
+    [RelayCommand]
+    async Task RefreshData()
+    {
+        Refreshing = false;
+        IsBusy = true;
+        await InitializeAsync();
+    }
+
 
     private async void BookPageViewModelPropertyChanged(object sender, PropertyChangedEventArgs e)
     {
@@ -67,7 +76,17 @@ public partial class HomeViewModel : ObservableObject
         try
         {
             Categories = await _categoryService.GetMainCategoriesAsync();
-            Books = await _bookService.GetMainBookAsync();
+            Books = await _bookService.GetMainBookAsync("livros","recentes");
+            var booksCheck = Books
+                .Where(x => x.Check == true)
+                .ToList();
+            
+            BooksCheck = booksCheck
+                .Skip(booksCheck
+                .Count() - 5)
+                .Take(5)
+                .ToList();
+            
             await Task.Delay(3000);
         }
         finally

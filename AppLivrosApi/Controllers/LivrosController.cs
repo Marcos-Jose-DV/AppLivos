@@ -21,11 +21,10 @@ public class LivrosController : Controller
         var books = await _context.Books.AsNoTracking().ToListAsync();
         if(books == null) return NotFound();
 
-
         return Ok(books);
     }
 
-    [HttpGet("v1/livros/{id:int}")]
+    [HttpGet("v1/livro/{id:int}")]
     public async Task<IActionResult> GetBookId([FromRoute] int id)
     {
         var book = await _context.Books.FirstOrDefaultAsync(x => x.Id == id);
@@ -33,8 +32,39 @@ public class LivrosController : Controller
 
         return Ok(book);
     }
+    [HttpGet("v1/livros/{id:int}")]
+    public async Task<IActionResult> GetBooksId([FromRoute] int id)
+    {
+        var book = await _context.Books.Where(x => x.CategoryId == id).ToListAsync();
+        if (book == null) return NotFound();
 
-    [HttpPost("v1/livros/Create")]
+        return Ok(book);
+    }
+
+    [HttpGet("v1/livros/recentes")]
+    public async Task<IActionResult> GetBooksFinalFive()
+    {
+        var count = _context.Books.Count();
+        var books = await _context.Books.Skip(count - 5).Take(5).ToListAsync();
+        books.Reverse();
+
+        if (books == null) return NotFound();
+
+        return Ok(books);
+    }
+    [HttpGet("v1/livros/lidos")]
+    public async Task<IActionResult> GetBooksReadFive()
+    {
+        var count = _context.Books.Count();
+        var books = await _context.Books.Skip(count - 5).Take(5).Select(check => check).ToListAsync();
+        books.Reverse();
+
+        if (books == null) return NotFound();
+
+        return Ok(books);
+    }
+
+    [HttpPost("v1/livro/Create")]
     public async Task<IActionResult> PutBookId([FromBody] Book model)
     {
         if (model == null) return NotFound();
@@ -46,7 +76,7 @@ public class LivrosController : Controller
     }
 
 
-    [HttpPut("v1/livros/{id:int}")]
+    [HttpPut("v1/livro/{id:int}")]
     public async Task<IActionResult> PutBookId([FromRoute] int id, [FromBody] Book model)
     {
         var book = await _context.Books.FirstOrDefaultAsync(x => x.Id == id);
@@ -67,7 +97,7 @@ public class LivrosController : Controller
         return Ok(model);
     }
 
-    [HttpDelete("v1/livros/{id:int}")]
+    [HttpDelete("v1/livro/{id:int}")]
     public async Task<IActionResult> DeleteBookId([FromRoute] int id)
     {
         var book = await _context.Books.FirstOrDefaultAsync(x => x.Id == id);

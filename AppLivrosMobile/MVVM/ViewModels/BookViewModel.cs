@@ -19,7 +19,7 @@ public partial class BookViewModel : ObservableObject
     public ObservableCollection<Book> Books { get; set; } = new();
     public async Task InitializeAsync()
     {
-        foreach (var book in await _bookService.GetMainBookAsync())
+        foreach (var book in await _bookService.GetMainBookAsync("livros",""))
         {
             Books.Add(book);
         }

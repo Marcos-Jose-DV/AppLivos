@@ -3,7 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AppLivrosMobile.AppShell"
              xmlns:views="clr-namespace:AppLivrosMobile.MVVM.Views"
-             Title="AppShell">
+             Title="AppShell"
+              Shell.TabBarTitleColor="#9c6644">
 
     <TabBar>
         <Tab  Icon="home.svg" Title="Inicio" >

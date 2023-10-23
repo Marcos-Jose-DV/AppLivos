@@ -35,11 +35,8 @@ namespace AppLivrosMobile
                 builder.Services.AddScoped<CategoryService>();
                 builder.Services.AddScoped<BookService>();
                 builder.Services.AddScoped<HttpClient>();
+                builder.Services.AddSingleton<INavigationService, NavigationService>();
             }
-
-
-
-            builder.Services.AddSingleton<INavigationService, NavigationService>();
 
             RegisterForRoute<BookCategoryIdPage>();
             RegisterForRoute<UpdateBookPage>();
@@ -56,7 +53,6 @@ namespace AppLivrosMobile
 #if DEBUG
             builder.Logging.AddDebug();
 #endif
-
             return builder.Build();
         }
     }

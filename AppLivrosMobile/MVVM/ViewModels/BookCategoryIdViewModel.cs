@@ -16,12 +16,11 @@ public partial class BookCategoryIdViewModel : ObservableObject, IQueryAttributa
     {
         _bookService = bookService;
     }
-    public async Task InitializeAsync(int id)
+    public async Task InitializeAsync(string id)
     {
         try
         {
-            var list = await _bookService.GetMainBookAsync();
-            BookId = list.Where(book => book.CategoryId == id).ToList();
+            BookId = await _bookService.GetMainBookAsync($"livros", id);
         }
         catch (Exception ex)
         {
@@ -31,7 +30,7 @@ public partial class BookCategoryIdViewModel : ObservableObject, IQueryAttributa
     }
     public async void ApplyQueryAttributes(IDictionary<string, object> query)
     {
-        var num = int.Parse(query["id"].ToString());
+        var num = (query["id"].ToString());
         await InitializeAsync(num);
     }
 }
