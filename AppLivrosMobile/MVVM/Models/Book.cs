@@ -1,11 +1,12 @@
 ﻿using AppLivrosMobile.MVVM.Views;
+using CommunityToolkit.Mvvm.ComponentModel;
 using System.Windows.Input;
 
 namespace AppLivrosMobile.MVVM.Models;
 
-public class Book
+public class Book 
 {
-    public Book(int id, string title, string description, string author, string imageUrl, int pageTotal, bool check, int pageIndex, int categoryId, int userId)
+    public Book(int id, string title, string description, string author, string imageUrl, int pageTotal, bool check, int categoryId, int userId, bool favorite, string favoriteImage)
     {
         Id = id;
         Title = title;
@@ -14,16 +15,16 @@ public class Book
         ImageUrl = imageUrl;
         PageTotal = pageTotal;
         Check = check;
-        PageIndex = pageIndex;
         CategoryId = categoryId;
         UserId = userId;
+        Favorite = favorite;
+        FavoriteImage = favoriteImage;
     }
 
     public int Id { get; set; }
     public string Title { get; set; }
     public string Description { get; set; }
     public string Author { get; set; }
-    //public string ImageUrl { get; set; }
 
     private string _imageUrl;
     public string ImageUrl
@@ -37,7 +38,26 @@ public class Book
 
     public int PageTotal { get; set; }
     public bool Check { get; set; }
-    public int PageIndex { get; set; }
+
+    public bool Favorite { get; set; }
+
+    private string _favoriteImage;
+    public string FavoriteImage
+    {
+        get => _favoriteImage;
+        set
+        {
+            if (!this.Favorite)
+            {
+                _favoriteImage = "https://firebasestorage.googleapis.com/v0/b/applivros-ea1a0.appspot.com/o/Books%2Fcoracao_black.png?alt=media&token=645f6e0f-2a93-4671-8d85-a01016102945&_gl=1*3gmwe1*_ga*NzE4OTM5NjkwLjE2OTcxNTQ1NDU.*_ga_CW55HF8NVT*MTY5ODExODI0Ni4xMy4wLjE2OTgxMTgyNDYuNjAuMC4w";
+            }
+            else
+            {
+                _favoriteImage = "https://firebasestorage.googleapis.com/v0/b/applivros-ea1a0.appspot.com/o/Books%2Fcoracao_red.png?alt=media&token=0e8f7a25-c176-4884-acad-ce3b2eed4cd3&_gl=1*1jsvuah*_ga*NzE4OTM5NjkwLjE2OTcxNTQ1NDU.*_ga_CW55HF8NVT*MTY5ODExODI0Ni4xMy4xLjE2OTgxMTgzNjUuNDQuMC4w";
+            }
+        }
+    }
+
     public int CategoryId { get; set; }
     public int UserId { get; set; }
 }

@@ -10828,11 +10828,12 @@ public final class R {
     public static final int notify_panel_notification_icon_bg=0x7f0700dd;
     public static final int policial=0x7f0700de;
     public static final int romance=0x7f0700df;
-    public static final int splash=0x7f0700e0;
-    public static final int tecnologia=0x7f0700e1;
-    public static final int test_level_drawable=0x7f0700e2;
-    public static final int tooltip_frame_dark=0x7f0700e3;
-    public static final int tooltip_frame_light=0x7f0700e4;
+    public static final int search=0x7f0700e0;
+    public static final int splash=0x7f0700e1;
+    public static final int tecnologia=0x7f0700e2;
+    public static final int test_level_drawable=0x7f0700e3;
+    public static final int tooltip_frame_dark=0x7f0700e4;
+    public static final int tooltip_frame_light=0x7f0700e5;
   }
   public static final class id {
     public static final int ALT=0x7f080000;

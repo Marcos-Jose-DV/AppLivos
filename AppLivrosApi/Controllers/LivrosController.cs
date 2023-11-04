@@ -15,11 +15,11 @@ public class LivrosController : Controller
         _context = dbContext;
     }
 
-    [HttpGet("v1/livros")]
+    [HttpGet("v1/livros/todos")]
     public async Task<IActionResult> GetBooks()
     {
         var books = await _context.Books.AsNoTracking().ToListAsync();
-        if(books == null) return NotFound();
+        if (books == null) return NotFound();
 
         return Ok(books);
     }
@@ -28,7 +28,7 @@ public class LivrosController : Controller
     public async Task<IActionResult> GetBookId([FromRoute] int id)
     {
         var book = await _context.Books.FirstOrDefaultAsync(x => x.Id == id);
-        if(book == null) return NotFound();
+        if (book == null) return NotFound();
 
         return Ok(book);
     }
@@ -55,16 +55,31 @@ public class LivrosController : Controller
     [HttpGet("v1/livros/lidos")]
     public async Task<IActionResult> GetBooksReadFive()
     {
-        var count = _context.Books.Count();
-        var books = await _context.Books.Skip(count - 5).Take(5).Select(check => check).ToListAsync();
-        books.Reverse();
+        var count = _context.Books
+            .Where(check => check.Check == true)
+            .Count();
+        List<Book> books = new();
+        if (count <= 5)
+        {
+            books = await _context.Books
+                .Where(check => check.Check == true)
+                .ToListAsync();
+        }
+        else
+        {
+            books = await _context.Books
+                .Skip(count - 5)
+                .Take(5)
+                .Reverse()
+                .ToListAsync();
+        }
 
         if (books == null) return NotFound();
 
         return Ok(books);
     }
 
-    [HttpPost("v1/livro/Create")]
+    [HttpPost("v1/livro/create")]
     public async Task<IActionResult> PutBookId([FromBody] Book model)
     {
         if (model == null) return NotFound();
@@ -88,11 +103,11 @@ public class LivrosController : Controller
         book.ImageUrl = model.ImageUrl;
         book.PageTotal = model.PageTotal;
         book.Check = model.Check;
-        book.PageIndex = model.PageIndex;
+        book.Favorite = model.Favorite;
         book.DateCreate = DateTime.UtcNow;
 
         _context.Books.Update(book);
-        await _context.SaveChangesAsync();    
+        await _context.SaveChangesAsync();
 
         return Ok(model);
     }

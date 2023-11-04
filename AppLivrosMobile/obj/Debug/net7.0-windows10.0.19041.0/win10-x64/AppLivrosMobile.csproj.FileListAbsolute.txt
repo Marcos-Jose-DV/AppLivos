@@ -322,3 +322,15 @@ C:\Users\AlexandreRibeiro\Desktop\AppLivros\AppLivrosMobile\obj\Debug\net7.0-win
 C:\Users\AlexandreRibeiro\Desktop\AppLivros\AppLivrosMobile\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\qualifiers.txt.intermediate
 C:\Users\AlexandreRibeiro\Desktop\AppLivros\AppLivrosMobile\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\MultipleQualifiersPerDimensionFound.txt
 C:\Users\AlexandreRibeiro\Desktop\AppLivros\AppLivrosMobile\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\ProjectArchitectures.txt
+D:\Projetos GitHub\C#\FullStack\AppLivos\AppLivrosMobile\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\AppLivrosMobile.csproj.AssemblyReference.cache
+D:\Projetos GitHub\C#\FullStack\AppLivos\AppLivrosMobile\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\mauiimage.inputs
+D:\Projetos GitHub\C#\FullStack\AppLivos\AppLivrosMobile\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\mauifont.inputs
+D:\Projetos GitHub\C#\FullStack\AppLivos\AppLivrosMobile\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\mauisplash.inputs
+D:\Projetos GitHub\C#\FullStack\AppLivos\AppLivrosMobile\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\mauimanifest.stamp
+D:\Projetos GitHub\C#\FullStack\AppLivos\AppLivrosMobile\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\Platforms\Windows\App.g.i.cs
+D:\Projetos GitHub\C#\FullStack\AppLivos\AppLivrosMobile\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\Platforms\Windows\App.g.cs
+D:\Projetos GitHub\C#\FullStack\AppLivos\AppLivrosMobile\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\XamlTypeInfo.g.cs
+D:\Projetos GitHub\C#\FullStack\AppLivos\AppLivrosMobile\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\Platforms\Windows\App.xaml
+D:\Projetos GitHub\C#\FullStack\AppLivos\AppLivrosMobile\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\Platforms\Windows\App.xbf
+D:\Projetos GitHub\C#\FullStack\AppLivos\AppLivrosMobile\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\XamlSaveStateFile.xml
+D:\Projetos GitHub\C#\FullStack\AppLivos\AppLivrosMobile\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\AppLivrosMobile.GeneratedMSBuildEditorConfig.editorconfig

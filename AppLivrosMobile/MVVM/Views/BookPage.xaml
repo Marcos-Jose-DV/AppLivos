@@ -2,15 +2,39 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AppLivrosMobile.MVVM.Views.BookPage"
+             xmlns:books="clr-namespace:AppLivrosMobile.MVVM.Models"
              Title="BookPage">
-    <VerticalStackLayout>
-        <CollectionView ItemsSource="{Binding Books}">
-            <CollectionView.ItemTemplate>
-                <DataTemplate>
-                    <Label Text="{Binding Title}"/>
-                </DataTemplate>
-            </CollectionView.ItemTemplate>
-        </CollectionView>
-        <Button Text="Att" Command="{Binding AttCommand}"/>
-    </VerticalStackLayout>
+
+    
+    
+    <!--<CollectionView ItemsSource="{Binding Books}">
+        <CollectionView.ItemsLayout>
+            <GridItemsLayout Orientation="Vertical" Span="2"/>
+        </CollectionView.ItemsLayout>
+        <CollectionView.ItemTemplate>
+            <DataTemplate x:DataType="books:Book">
+                <VerticalStackLayout Spacing="20" Margin="10">
+                    <Border StrokeShape="RoundRectangle 10" WidthRequest="150" Margin="0" Padding="0"> 
+                        
+                <Image Source="{Binding ImageUrl}" />
+                    </Border>
+                </VerticalStackLayout>
+
+            </DataTemplate>
+        </CollectionView.ItemTemplate>
+    </CollectionView>-->
+
+
+
+    <ListView ItemsSource="{Binding Books}" CachingStrategy="RecycleElement" SelectedItem ="{Binding SelectBook, Mode=TwoWay}" SelectionMode="Single">
+        <ListView.ItemTemplate>
+            <DataTemplate x:DataType="books:Book">
+                <ImageCell ImageSource="{Binding ImageUrl}"
+                       Text="{Binding Title}"
+                       TextColor="#0291F7"
+                       Detail="{Binding Description}"/>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+
 </ContentPage>

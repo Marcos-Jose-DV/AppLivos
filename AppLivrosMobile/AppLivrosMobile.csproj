@@ -49,24 +49,8 @@
 
 	<ItemGroup>
 	  <None Remove="Resources\Fonts\Roboto-Bold.ttf" />
-	  <None Remove="Resources\Images\arquilimpa.jpg" />
-	  <None Remove="Resources\Images\autoajuda.png" />
-	  <None Remove="Resources\Images\aventura.png" />
-	  <None Remove="Resources\Images\biografia.png" />
-	  <None Remove="Resources\Images\book.svg" />
-	  <None Remove="Resources\Images\category.svg" />
-	  <None Remove="Resources\Images\codigolimpo.jpg" />
-	  <None Remove="Resources\Images\codlimpo.jpg" />
-	  <None Remove="Resources\Images\devlimpo.jpg" />
-	  <None Remove="Resources\Images\fantasia.png" />
-	  <None Remove="Resources\Images\ficcao.png" />
-	  <None Remove="Resources\Images\historia.png" />
-	  <None Remove="Resources\Images\home.svg" />
-	  <None Remove="Resources\Images\misterio.png" />
-	  <None Remove="Resources\Images\naoficcao.png" />
-	  <None Remove="Resources\Images\policial.png" />
-	  <None Remove="Resources\Images\romance.png" />
-	  <None Remove="Resources\Images\tecnologia.png" />
+	  <None Remove="Resources\Fonts\Salsa-Regular.ttf" />
+	  <None Remove="Resources\Images\search.png" />
 	</ItemGroup>
 
 	<ItemGroup>

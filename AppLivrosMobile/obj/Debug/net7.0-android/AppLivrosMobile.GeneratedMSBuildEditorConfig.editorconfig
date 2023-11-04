@@ -12,57 +12,57 @@ build_property.EnableSingleFileAnalyzer = true
 build_property.EnableTrimAnalyzer = false
 build_property.IncludeAllContentForSelfExtract = 
 build_property.RootNamespace = AppLivrosMobile
-build_property.ProjectDir = C:\Users\AlexandreRibeiro\Desktop\AppLivros\AppLivos\AppLivrosMobile\
+build_property.ProjectDir = D:\Projetos GitHub\C#\FullStack\AppLivos\AppLivrosMobile\
 
-[C:/Users/AlexandreRibeiro/Desktop/AppLivros/AppLivos/AppLivrosMobile/App.xaml]
+[D:/Projetos GitHub/C\#/FullStack/AppLivos/AppLivrosMobile/App.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = AppLivrosMobile.App.xaml
 build_metadata.AdditionalFiles.TargetPath = App.xaml
 build_metadata.AdditionalFiles.RelativePath = App.xaml
 
-[C:/Users/AlexandreRibeiro/Desktop/AppLivros/AppLivos/AppLivrosMobile/AppShell.xaml]
+[D:/Projetos GitHub/C\#/FullStack/AppLivos/AppLivrosMobile/AppShell.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = AppLivrosMobile.AppShell.xaml
 build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
 build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
 
-[C:/Users/AlexandreRibeiro/Desktop/AppLivros/AppLivos/AppLivrosMobile/MVVM/Views/BookCategoryIdPage.xaml]
+[D:/Projetos GitHub/C\#/FullStack/AppLivos/AppLivrosMobile/MVVM/Views/BookCategoryIdPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = AppLivrosMobile.MVVM.Views.BookCategoryIdPage.xaml
 build_metadata.AdditionalFiles.TargetPath = MVVM\Views\BookCategoryIdPage.xaml
 build_metadata.AdditionalFiles.RelativePath = MVVM\Views\BookCategoryIdPage.xaml
 
-[C:/Users/AlexandreRibeiro/Desktop/AppLivros/AppLivos/AppLivrosMobile/MVVM/Views/BookIdPage.xaml]
+[D:/Projetos GitHub/C\#/FullStack/AppLivos/AppLivrosMobile/MVVM/Views/BookIdPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = AppLivrosMobile.MVVM.Views.BookIdPage.xaml
 build_metadata.AdditionalFiles.TargetPath = MVVM\Views\BookIdPage.xaml
 build_metadata.AdditionalFiles.RelativePath = MVVM\Views\BookIdPage.xaml
 
-[C:/Users/AlexandreRibeiro/Desktop/AppLivros/AppLivos/AppLivrosMobile/MVVM/Views/BookPage.xaml]
+[D:/Projetos GitHub/C\#/FullStack/AppLivos/AppLivrosMobile/MVVM/Views/BookPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = AppLivrosMobile.MVVM.Views.BookPage.xaml
 build_metadata.AdditionalFiles.TargetPath = MVVM\Views\BookPage.xaml
 build_metadata.AdditionalFiles.RelativePath = MVVM\Views\BookPage.xaml
 
-[C:/Users/AlexandreRibeiro/Desktop/AppLivros/AppLivos/AppLivrosMobile/MVVM/Views/HomePage.xaml]
+[D:/Projetos GitHub/C\#/FullStack/AppLivos/AppLivrosMobile/MVVM/Views/HomePage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = AppLivrosMobile.MVVM.Views.HomePage.xaml
 build_metadata.AdditionalFiles.TargetPath = MVVM\Views\HomePage.xaml
 build_metadata.AdditionalFiles.RelativePath = MVVM\Views\HomePage.xaml
 
-[C:/Users/AlexandreRibeiro/Desktop/AppLivros/AppLivos/AppLivrosMobile/MVVM/Views/UpdateBookPage.xaml]
+[D:/Projetos GitHub/C\#/FullStack/AppLivos/AppLivrosMobile/MVVM/Views/UpdateBookPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = AppLivrosMobile.MVVM.Views.UpdateBookPage.xaml
 build_metadata.AdditionalFiles.TargetPath = MVVM\Views\UpdateBookPage.xaml
 build_metadata.AdditionalFiles.RelativePath = MVVM\Views\UpdateBookPage.xaml
 
-[C:/Users/AlexandreRibeiro/Desktop/AppLivros/AppLivos/AppLivrosMobile/Resources/Styles/Colors.xaml]
+[D:/Projetos GitHub/C\#/FullStack/AppLivos/AppLivrosMobile/Resources/Styles/Colors.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = AppLivrosMobile.Resources.Styles.Colors.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
 
-[C:/Users/AlexandreRibeiro/Desktop/AppLivros/AppLivos/AppLivrosMobile/Resources/Styles/Styles.xaml]
+[D:/Projetos GitHub/C\#/FullStack/AppLivos/AppLivrosMobile/Resources/Styles/Styles.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = AppLivrosMobile.Resources.Styles.Styles.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml

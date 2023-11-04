@@ -4,7 +4,7 @@
              x:Class="AppLivrosMobile.AppShell"
              xmlns:views="clr-namespace:AppLivrosMobile.MVVM.Views"
              Title="AppShell"
-              Shell.TabBarTitleColor="#9c6644">
+             Shell.TabBarTitleColor="#0291F7">
 
     <TabBar>
         <Tab  Icon="home.svg" Title="Inicio" >
@@ -16,7 +16,7 @@
         </Tab>
 
         <Tab Icon="book.svg" Title="Livros">
-            <ShellContent  ContentTemplate="{DataTemplate views:HomePage}" Route="HomePage"/>
+            <ShellContent  ContentTemplate="{DataTemplate views:BookPage}" Route="BookPage"/>
         </Tab>
     </TabBar>
 </Shell>

@@ -7,7 +7,7 @@
              xmlns:viewmodel="clr-namespace:AppLivrosMobile.MVVM.ViewModels"
              Shell.NavBarIsVisible="False"
              Title="HomePage"
-             BackgroundColor="{StaticResource Primary}">
+             BackgroundColor="#F5FCFF">
 
     <RefreshView  IsRefreshing="{Binding Refreshing}"
                     Command="{Binding RefreshDataCommand}">
@@ -15,27 +15,34 @@
             <Grid>
                 <VerticalStackLayout Padding="10, 15">
 
-                    <Label>
-                        <Label.FormattedText>
-                            <FormattedString>
-                                <Span Text="Olá, &#10;"
+                    <Grid ColumnDefinitions="*,*" RowDefinitions="80">
+
+                        <Label VerticalOptions="Center" Margin="0,0,0,30" >
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <Span Text="Olá, &#10;"
                           Style="{StaticResource H2}"/>
-                                <Span Text="Marcos"
+                                    <Span Text="Marcos"
                           Style="{StaticResource H2}"/>
-                            </FormattedString>
-                        </Label.FormattedText>
-                    </Label>
+                                </FormattedString>
+                            </Label.FormattedText>
+                        </Label>
+
+                        <ImageButton  Grid.Column="1" VerticalOptions="Center" HorizontalOptions="End" Source="search.png"/>
+                    </Grid>
+
 
                     <CollectionView ItemsSource="{Binding Categories}" 
                     SelectionMode="Single"
                     SelectedItem="{Binding 
                     SelectedCategory, Mode=TwoWay}" >
+                       
                         <CollectionView.ItemsLayout>
                             <GridItemsLayout Orientation="Horizontal"/>
-                        </CollectionView.ItemsLayout>
+                        </CollectionView.ItemsLayout>                  
                         <CollectionView.ItemTemplate>
                             <DataTemplate x:DataType="models:Category">
-                                <Border  WidthRequest="150" Margin="10" Padding="10" StrokeShape="RoundRectangle 15" >
+                                <Border  WidthRequest="150" Margin="10" Padding="10" StrokeShape="RoundRectangle 20" BackgroundColor="#0291F7">
                                     <HorizontalStackLayout HorizontalOptions="Center" VerticalOptions="Center" Spacing="10">
                                         <Image Source="{Binding ImageUrl}" Aspect="AspectFill" WidthRequest="20"/>
                                         <Label Text="{Binding Name}" Style="{StaticResource H3}"/>
@@ -55,31 +62,30 @@
                             <GridItemsLayout Orientation="Horizontal" />
                         </CollectionView.ItemsLayout>
                         <CollectionView.ItemTemplate>
-                            <DataTemplate >
-                                <!--x:DataType="models:Book"-->
-
-                                <Grid  Padding="5" RowDefinitions="*,Auto" RowSpacing="10">
-                                    <VerticalStackLayout Spacing="5">
-                                        <Border>
-                                            <Grid ColumnDefinitions="Auto,Auto" ColumnSpacing="10">
-
-                                                <Image Source="{Binding ImageUrl}" 
+                            <DataTemplate x:DataType="models:Book">
+                                <Border StrokeShape="RoundRectangle 20" StrokeThickness="1" Stroke="Transparent" Margin="10,0" >
+                                    <Border.Shadow>
+                                        <Shadow Brush="Gray"
+                                                Offset="0,5"
+                                                Radius="0"
+                                                Opacity="0.4" />
+                                    </Border.Shadow>
+                                    <Grid RowDefinitions="150" ColumnDefinitions="Auto,150,50" >
+                                        <Image Source="{Binding ImageUrl}" 
                                                        Aspect="AspectFill"
-                                                       WidthRequest="150"
-                                                       HeightRequest="200"
+                                                       WidthRequest="100"
+                                                       HeightRequest="150"
                                                        VerticalOptions="Center"
                                                        HorizontalOptions="Start"/>
 
-                                                <VerticalStackLayout  Grid.Column="1" Margin="5" Spacing="10">
-                                                    <Label  Text="{Binding Check, Converter={StaticResource CheckViewBook}}" Style="{StaticResource H4}"/>
-                                                    <Label  Text="{Binding PageTotal, StringFormat='Total de paginas {0}'}" Style="{StaticResource H4}"/>
-                                                    <Label  Text="{Binding PageIndex, StringFormat='Total de paginas lidas {0}'}" Style="{StaticResource H4}"/>
-                                                </VerticalStackLayout>
-                                            </Grid>
-                                        </Border>
-
-                                    </VerticalStackLayout>
-                                </Grid>
+                                        <VerticalStackLayout  Grid.Column="1" Margin="10,10,0,0" Spacing="10">
+                                            <Label  Text="{Binding Check, Converter={StaticResource CheckViewBook}}" Style="{StaticResource H4}"/>
+                                            <Label  Text="{Binding PageTotal, StringFormat='Paginas {0}'}" Style="{StaticResource H4}"/>
+                                            <Label  Text="{Binding Author, StringFormat='Autor: {0}'}" Style="{StaticResource H4}"/>
+                                        </VerticalStackLayout>
+                                        <ImageButton  Grid.Column="2" HorizontalOptions="Center" VerticalOptions="Start" WidthRequest="30" Source="{Binding FavoriteImage}" />
+                                    </Grid>
+                                </Border>
                             </DataTemplate>
                         </CollectionView.ItemTemplate>
                     </CollectionView>
@@ -94,35 +100,34 @@
                             <GridItemsLayout Orientation="Horizontal" />
                         </CollectionView.ItemsLayout>
                         <CollectionView.ItemTemplate>
-                            <DataTemplate >
-                                <!--x:DataType="models:Book"-->
+                            <DataTemplate x:DataType="models:Book">
+                                <Border StrokeShape="RoundRectangle 20" StrokeThickness="1" Stroke="Transparent" Margin="10,0" >
+                                    <Border.Shadow>
+                                        <Shadow Brush="Gray"
+                                                Offset="0,5"
+                                                Radius="0"
+                                                Opacity="0.4" />
+                                    </Border.Shadow>
+                                    <Grid RowDefinitions="150" ColumnDefinitions="Auto,150,50" >
+                                        <Image Source="{Binding ImageUrl}" 
+                                               Aspect="AspectFill"
+                                               WidthRequest="100"
+                                               HeightRequest="150"
+                                               VerticalOptions="Center"
+                                               HorizontalOptions="Start"/>
 
-                                <Grid  Padding="5" RowDefinitions="*,Auto" RowSpacing="10">
-                                    <VerticalStackLayout Spacing="5">
-                                        <Border>
-                                            <Grid ColumnDefinitions="Auto,Auto" ColumnSpacing="10">
-
-                                                <Image Source="{Binding ImageUrl}" 
-                                                       Aspect="AspectFill"
-                                                       WidthRequest="150"
-                                                       HeightRequest="200"
-                                                       VerticalOptions="Center"
-                                                       HorizontalOptions="Start"/>
-
-                                                <VerticalStackLayout  Grid.Column="1" Margin="5" Spacing="10">
-                                                    <Label  Text="{Binding Check, Converter={StaticResource CheckViewBook}}" Style="{StaticResource H4}"/>
-                                                    <Label  Text="{Binding PageTotal, StringFormat='Total de paginas {0}'}" Style="{StaticResource H4}"/>
-                                                    <Label  Text="{Binding PageIndex, StringFormat='Total de paginas lidas {0}'}" Style="{StaticResource H4}"/>
-                                                </VerticalStackLayout>
-                                            </Grid>
-                                        </Border>
-
-                                    </VerticalStackLayout>
-                                </Grid>
+                                        <VerticalStackLayout  Grid.Column="1" Margin="10,10,0,0" Spacing="10">
+                                            <Label  Text="{Binding Check, Converter={StaticResource CheckViewBook}}" Style="{StaticResource H4}"/>
+                                            <Label  Text="{Binding PageTotal, StringFormat='Paginas {0}'}" Style="{StaticResource H4}"/>
+                                            <Label  Text="{Binding Author, StringFormat='Autor: {0}'}" Style="{StaticResource H4}"/>
+                                        </VerticalStackLayout>
+                                        <ImageButton  Grid.Column="2" HorizontalOptions="Center" VerticalOptions="Start" WidthRequest="30" Source="{Binding FavoriteImage}" />
+                                    </Grid>
+                                </Border>
                             </DataTemplate>
                         </CollectionView.ItemTemplate>
                     </CollectionView>
-                    
+
                 </VerticalStackLayout>
 
                 <Grid IsVisible="{Binding IsBusy}">

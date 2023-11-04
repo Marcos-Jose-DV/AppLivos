@@ -4,8 +4,10 @@ using AppLivrosMobile.Services;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using System.ComponentModel;
-using System.Linq;
+using System.Text.Json;
+using System.Text;
 using System.Windows.Input;
+using AppLivrosMobile.Constants;
 
 namespace AppLivrosMobile.MVVM.ViewModels;
 
@@ -14,21 +16,28 @@ public partial class HomeViewModel : ObservableObject
     private readonly CategoryService _categoryService;
     private readonly BookService _bookService;
     private readonly INavigationService _navigationService;
-
+   
     [ObservableProperty]
     Category _selectedCategory;
     [ObservableProperty]
     Book _selectedBook;
-
     [ObservableProperty]
     bool _IsBusy, _refreshing;
-
     [ObservableProperty]
     IEnumerable<Category> _categories;
     [ObservableProperty]
     IEnumerable<Book> _books, _booksCheck;
 
-   
+    public ICommand AddFavoriteCommand
+        => new Command(async () => await AddFavorite());
+
+    private async Task AddFavorite()
+    {
+        var book = Books.FirstOrDefault(book => book.Id == SelectedBook.Id);
+        await _bookService.PutForiteAsync(book);
+        await InitializeAsync(); // Atualiza a lista de produtos
+    }
+
     public HomeViewModel(CategoryService categoryService, BookService bookService, INavigationService navigation)
     {
         IsBusy = true;
@@ -76,17 +85,9 @@ public partial class HomeViewModel : ObservableObject
         try
         {
             Categories = await _categoryService.GetMainCategoriesAsync();
-            Books = await _bookService.GetMainBookAsync("livros","recentes");
-            var booksCheck = Books
-                .Where(x => x.Check == true)
-                .ToList();
-            
-            BooksCheck = booksCheck
-                .Skip(booksCheck
-                .Count() - 5)
-                .Take(5)
-                .ToList();
-            
+            Books = await _bookService.GetMainBookAsync("livros", "recentes");
+            BooksCheck = await _bookService.GetMainBookAsync("livros", "lidos");
+
             await Task.Delay(3000);
         }
         finally

@@ -40,12 +40,12 @@ namespace AppLivrosApi.Migrations
                         .IsRequired()
                         .HasColumnType("TEXT");
 
+                    b.Property<bool>("Favorite")
+                        .HasColumnType("INTEGER");
+
                     b.Property<string>("ImageUrl")
                         .IsRequired()
                         .HasColumnType("TEXT");
-
-                    b.Property<int>("PageIndex")
-                        .HasColumnType("INTEGER");
 
                     b.Property<int>("PageTotal")
                         .HasColumnType("INTEGER");
@@ -57,6 +57,125 @@ namespace AppLivrosApi.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Books");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Author = "Robert C. Martin",
+                            CategoryId = 1,
+                            Check = true,
+                            DateCreate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Description = "Guia de sucesso para escrever código sustentável e de alta qualidade.",
+                            Favorite = false,
+                            ImageUrl = "clean_code.jpg",
+                            PageTotal = 464,
+                            Title = "Clean Code: Um Manual de Práticas Ágeis para Código Limpo"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Author = "Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides",
+                            CategoryId = 1,
+                            Check = true,
+                            DateCreate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Description = "Livro clássico sobre padrões de design orientados a objetos.",
+                            Favorite = false,
+                            ImageUrl = "design_patterns.jpg",
+                            PageTotal = 416,
+                            Title = "Padrões de Design: Elementos de Software Orientado a Objetos Reutilizável"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Author = "Andrew Hunt, David Thomas",
+                            CategoryId = 1,
+                            Check = true,
+                            DateCreate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Description = "Um guia para se tornar um programador mais eficiente e eficaz.",
+                            Favorite = false,
+                            ImageUrl = "pragmatic_programmer.jpg",
+                            PageTotal = 352,
+                            Title = "O Programador Pragmático: Sua Jornada para a Maestria"
+                        },
+                        new
+                        {
+                            Id = 4,
+                            Author = "Michael Sipser",
+                            CategoryId = 1,
+                            Check = true,
+                            DateCreate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Description = "Um livro didático abrangente sobre a teoria da computação.",
+                            Favorite = false,
+                            ImageUrl = "theory_of_computation.jpg",
+                            PageTotal = 521,
+                            Title = "Introdução à Teoria da Computação"
+                        },
+                        new
+                        {
+                            Id = 5,
+                            Author = "Gayle Laakmann McDowell",
+                            CategoryId = 1,
+                            Check = true,
+                            DateCreate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Description = "Um guia para preparação de entrevistas técnicas com perguntas e soluções de programação.",
+                            Favorite = false,
+                            ImageUrl = "cracking_the_coding_interview.jpg",
+                            PageTotal = 687,
+                            Title = "Desvendando a Entrevista de Programação: 189 Perguntas e Soluções"
+                        },
+                        new
+                        {
+                            Id = 6,
+                            Author = "Eric Matthes",
+                            CategoryId = 1,
+                            Check = false,
+                            DateCreate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Description = "Uma introdução prática à programação usando Python.",
+                            Favorite = false,
+                            ImageUrl = "python_crash_course.jpg",
+                            PageTotal = 562,
+                            Title = "Python Crash Course: Uma Introdução Prática à Programação Baseada em Projetos"
+                        },
+                        new
+                        {
+                            Id = 7,
+                            Author = "Gene Kim, Kevin Behr, George Spafford",
+                            CategoryId = 1,
+                            Check = false,
+                            DateCreate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Description = "Um romance que explora TI e DevOps no contexto empresarial.",
+                            Favorite = false,
+                            ImageUrl = "phoenix_project.jpg",
+                            PageTotal = 376,
+                            Title = "O Projeto Fênix: Um Romance sobre TI, DevOps e o Sucesso Empresarial"
+                        },
+                        new
+                        {
+                            Id = 8,
+                            Author = "Ian Goodfellow, Yoshua Bengio, Aaron Courville",
+                            CategoryId = 1,
+                            Check = false,
+                            DateCreate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Description = "Um livro didático abrangente sobre aprendizado profundo e redes neurais.",
+                            Favorite = false,
+                            ImageUrl = "deep_learning.jpg",
+                            PageTotal = 800,
+                            Title = "Aprendizado Profundo"
+                        },
+                        new
+                        {
+                            Id = 9,
+                            Author = "Stuart Russell, Peter Norvig",
+                            CategoryId = 1,
+                            Check = false,
+                            DateCreate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Description = "Um livro didático amplamente usado sobre inteligência artificial.",
+                            Favorite = false,
+                            ImageUrl = "ai_modern_approach.jpg",
+                            PageTotal = 1132,
+                            Title = "Inteligência Artificial: Uma Abordagem Moderna"
+                        });
                 });
 
             modelBuilder.Entity("AppLivrosApi.Models.Category", b =>

@@ -43,6 +43,10 @@ public class BookMap : IEntityTypeConfiguration<Book>
             .HasColumnType("NVARCHAR")
             .HasMaxLength(300);
 
+        builder.Property(x => x.Favorite)
+            .HasColumnName("Favorite")
+            .HasColumnType("BOOL");
+
         builder.Property(x => x.PageTotal)
             .IsRequired()
             .HasColumnName("PageTotal")
@@ -52,11 +56,6 @@ public class BookMap : IEntityTypeConfiguration<Book>
            .IsRequired()
            .HasColumnName("Check")
            .HasColumnType("BOOL");
-
-        builder.Property(x => x.PageIndex)
-            .IsRequired()
-            .HasColumnName("PageIndex")
-            .HasColumnType("INT");
 
         builder.Property(x => x.CategoryId)
             .IsRequired()

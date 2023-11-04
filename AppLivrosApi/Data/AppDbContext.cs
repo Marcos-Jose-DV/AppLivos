@@ -13,7 +13,6 @@ public class AppDbContext : DbContext
 
     }
 
-
     public DbSet<Book> Books { get; set; }
     public DbSet<Category> Categories { get; set; }
     protected override void OnConfiguring(DbContextOptionsBuilder options)
@@ -41,5 +40,18 @@ public class AppDbContext : DbContext
                 new Category(10, "Autoajuda", "autoajuda", "autoajuda.png"),
                 new Category(11, "Policial", "policial", "policial.png")
             );
+
+        modelBuilder.Entity<Book>()
+            .HasData(
+                new Book(1, "Clean Code: Um Manual de Práticas Ágeis para Código Limpo", "Guia de sucesso para escrever código sustentável e de alta qualidade.", "Robert C. Martin", "clean_code.jpg", 464, true, 1),
+                new Book(2, "Padrões de Design: Elementos de Software Orientado a Objetos Reutilizável", "Livro clássico sobre padrões de design orientados a objetos.", "Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides", "design_patterns.jpg", 416, true, 1),
+                new Book(3, "O Programador Pragmático: Sua Jornada para a Maestria", "Um guia para se tornar um programador mais eficiente e eficaz.", "Andrew Hunt, David Thomas", "pragmatic_programmer.jpg", 352, true, 1),
+                new Book(4, "Introdução à Teoria da Computação", "Um livro didático abrangente sobre a teoria da computação.", "Michael Sipser", "theory_of_computation.jpg", 521, true, 1),
+                new Book(5, "Desvendando a Entrevista de Programação: 189 Perguntas e Soluções", "Um guia para preparação de entrevistas técnicas com perguntas e soluções de programação.", "Gayle Laakmann McDowell", "cracking_the_coding_interview.jpg", 687, true, 1),
+                new Book(6, "Python Crash Course: Uma Introdução Prática à Programação Baseada em Projetos", "Uma introdução prática à programação usando Python.", "Eric Matthes", "python_crash_course.jpg", 562, false, 1),
+                new Book(7, "O Projeto Fênix: Um Romance sobre TI, DevOps e o Sucesso Empresarial", "Um romance que explora TI e DevOps no contexto empresarial.", "Gene Kim, Kevin Behr, George Spafford", "phoenix_project.jpg", 376, false, 1),
+                new Book(8, "Aprendizado Profundo", "Um livro didático abrangente sobre aprendizado profundo e redes neurais.", "Ian Goodfellow, Yoshua Bengio, Aaron Courville", "deep_learning.jpg", 800, false, 1),
+                new Book(9, "Inteligência Artificial: Uma Abordagem Moderna", "Um livro didático amplamente usado sobre inteligência artificial.", "Stuart Russell, Peter Norvig", "ai_modern_approach.jpg", 1132, false, 1)
+                );
     }
 }
